@@ -1,0 +1,5 @@
+/**
+ * Pliki konfiguracyjne
+ */
+
+package config;

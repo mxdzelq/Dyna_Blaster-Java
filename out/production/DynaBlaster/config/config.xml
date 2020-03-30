@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<gameWindowHeight>384</gameWindowHeight>
+<gameWindowWidth>640</gameWindowWidth>
+<frameTitle>Dyna Blaster</frameTitle>
+<defaultFps>60</defaultFps>
+<playerHealth>3</playerHealth>
+<enemyHealth>1</enemyHealth>
+<defaultPlayerSpeed>3</defaultPlayerSpeed>
+
+    <rulesText>        1.Sterowanie postacią za pomocą WASD, stawianie bomby spacją, pauza p, odpauzowanie o (należy przytrzymać przycisk ok 2sekundy)
+        2.Celem jest znalezienia przejścia ukrytego pod jednym z brązowych bloków, jednocześnie unikając przeciwników
+        3.Gracz ma 3 życia, gra kończy się po ich stracie lub po przejściu wszystkich poziomów </rulesText>
+</config>
