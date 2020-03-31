@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6997ce71-3155-4cf3-bfff-82b7775e39ae" name="Default Changelist" comment="" />
+    <list default="true" id="6997ce71-3155-4cf3-bfff-82b7775e39ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Fire/FireRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/KeyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Brick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Creature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/EntityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Fire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/KeyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Brick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Fire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Assets.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +39,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZTui9U0gPYbxgtaJNEFBjpsbRV" />
   <component name="ProjectViewState">
@@ -23,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/XDD/simple-rpg-master" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -63,6 +96,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1584887678127">
       <screen x="0" y="0" width="1536" height="824" />
@@ -72,10 +118,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585075785446" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585313770990">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585668087127">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585313770990" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585668087127" />
     <state x="526" y="160" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585569755384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -84,22 +130,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="577" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585482090677" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1585569764317">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1585668636055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585569764317" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1585569764317">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585668636055" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1585668636055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585569764317" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1585569764317">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585668636055" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1585668636055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585569764317" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1585569764317">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585668636055" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1585668636055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585569764317" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585668636055" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585316871725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -120,10 +166,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585313345704" />
-    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1585042253778">
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1585665173937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1585042253778" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1585665173937" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585478046259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

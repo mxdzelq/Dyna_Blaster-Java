@@ -57,6 +57,8 @@ public class Enemy extends Creature {
     move();
     }
 
+    public void die(){}
+
     /**
      * Narysowanie stanu przeciwnika
      * @param g obiekt graficzny przeciwnika

@@ -243,4 +243,8 @@ public class Game implements Runnable {
     public void setHeight(int height) {
         this.height = height;
     }
+
+    public Thread getThread() {
+        return thread;
+    }
 }

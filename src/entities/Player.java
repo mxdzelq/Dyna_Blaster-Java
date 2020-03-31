@@ -150,7 +150,8 @@ public class Player extends Creature {
 
     public void setBomb(float x, float y){
         ArrayList<Entity> entities=handler.getMap().getEntityManager().getEntities();
-        entities.add(new Bomb(handler,x,y));
+        Bomb bomb=new Bomb(handler,x,y);
+        entities.add(bomb);
 
     }
 
@@ -174,7 +175,10 @@ public class Player extends Creature {
         if(handler.getKeyManager().bombPlace){
             if(canSetBomb) {
                 setBomb(x, y);
-                canSetBomb=false;
+                if(bomb.isBombed())
+                canSetBomb=true;
+                else
+                    canSetBomb=false;
             }
         }
 
@@ -189,6 +193,8 @@ public class Player extends Creature {
     g.drawImage(getCurrentAnimationFrame(),(int)x,(int)y,width,height,null);
 
     }
+
+    public void die(){}
 
     /**
      * Obsługa animacji ruchu
@@ -209,5 +215,7 @@ public class Player extends Creature {
         }
     }
 
-
+    public void setCanSetBomb(boolean canSetBomb) {
+        this.canSetBomb = canSetBomb;
+    }
 }

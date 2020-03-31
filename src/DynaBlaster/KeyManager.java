@@ -77,6 +77,7 @@ public class KeyManager implements KeyListener{
 
         if(keys[e.getKeyCode()]==pause){
             Game.paused=true;
+
         }
         if(keys[e.getKeyCode()]==unpause){
             Game.paused=false;

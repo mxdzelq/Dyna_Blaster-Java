@@ -36,6 +36,8 @@ public class Brick extends StaticEntity {
 
     }
 
+    public void die(){}
+
     /**
      * Narysowanie stanu cegły
      * @param g obiekt graficzny cegły

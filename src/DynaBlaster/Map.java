@@ -57,6 +57,7 @@ public class Map {
     entityManager=new EntityManager(handler, new Player(handler,32,32));
     //entityManager.addEntity(new Bomb(handler,300,300));
     //entityManager.addEntity(new Enemy(handler,200,200));
+    //entityManager.addEntity(new Fire(handler,200,200,3));
 
     loadMap();
     loadEntities();

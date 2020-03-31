@@ -13,16 +13,11 @@ public abstract class Creature extends Entity{
      * Zmienne statyczne
      */
 
-    public static final int DEFAULT_HEALTH = 10;
     public static final float DEFAULT_SPEED = 3.0f;
     public static final int DEFAULT_CREATURE_WIDTH=32;
     public static final int DEFAULT_CREATURE_HEIGHT=32;
 
-    /**
-     * Życie jednostki
-     */
 
-    protected int health;
 
     /**
      * Prędkość jednostki
@@ -42,10 +37,12 @@ public abstract class Creature extends Entity{
 
     public Creature(Handler handler,float x, float y, int width, int height) {
         super(handler,x, y,width,height);
-        health=DEFAULT_HEALTH;
+
         speed=DEFAULT_SPEED;
 
     }
+
+    public void die(){}
 
     /**
      * Ruch jednostki

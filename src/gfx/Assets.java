@@ -31,6 +31,11 @@ public class Assets {
 
     public static BufferedImage[] player_down, player_up, player_left, player_right;
 
+
+    public static BufferedImage[] bomb_boom;
+
+    public static BufferedImage[] fireRight,fireLeft,fireUp,fireDown;
+
     /**
      * Wczytanie wszystkich obrazów wykorzystywanych w grze
      */
@@ -42,6 +47,13 @@ public class Assets {
     player_up=new BufferedImage[3];
     player_right=new BufferedImage[3];
     player_left=new BufferedImage[3];
+
+    bomb_boom=new BufferedImage[7];
+
+    fireRight=new BufferedImage[4];
+    fireLeft=fireRight;
+    fireUp=new BufferedImage[4];
+    fireDown=fireUp;
 
     player_down[0]=sheet.crop(0,0,width,height);
     player_down[1]=sheet.crop(24,0,width,height);
@@ -58,6 +70,26 @@ public class Assets {
         player_left[0]=sheet.crop(144,0,width,height);
         player_left[1]=sheet.crop(168,0,width,height);
         player_left[2]=sheet.crop(192,0,width,height);
+
+        bomb_boom[0]=sheet.crop(470,0,16,16);
+        bomb_boom[1]=sheet.crop(486,0,16,16);
+        bomb_boom[2]=sheet.crop(502,0,16,16);
+        bomb_boom[3]=sheet.crop(390,32,16,16);
+        bomb_boom[4]=sheet.crop(406,32,16,16);
+        bomb_boom[5]=sheet.crop(422,32,16,16);
+        bomb_boom[6]=sheet.crop(438,32,16,16);
+
+        fireRight[0]=sheet.crop(326,32,16,16);
+        fireRight[1]=sheet.crop(342,32,16,16);
+        fireRight[2]=sheet.crop(358,32,16,16);
+        fireRight[3]=sheet.crop(374,32,16,16);
+
+        fireUp[0]=sheet.crop(582,16,16,16);
+        fireUp[1]=sheet.crop(598,16,16,16);
+        fireUp[2]=sheet.crop(614,16,16,16);
+        fireUp[3]=sheet.crop(630,16,16,16);
+
+
 
 
 
