@@ -1,0 +1,5 @@
+/**
+ * Pakiet główny
+ */
+
+package DynaBlaster;

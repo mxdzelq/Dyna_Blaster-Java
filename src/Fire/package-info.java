@@ -1,0 +1,4 @@
+/**
+ * Pakiet ognia
+ */
+package Fire;

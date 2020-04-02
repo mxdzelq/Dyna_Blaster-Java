@@ -5,9 +5,10 @@ import gfx.Assets;
 import tiles.Tile;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 /**
- * Klasa cegły (bloku niszczalnego)
+ * Klasa cegły (bloku możliwego do zniszczenia)
  */
 
 public class Brick extends StaticEntity {
@@ -36,7 +37,9 @@ public class Brick extends StaticEntity {
 
     }
 
-    public void die(){}
+    public void die(){
+
+    }
 
     /**
      * Narysowanie stanu cegły

@@ -1,5 +1,8 @@
 package DynaBlaster;
 
+import SpecialEntities.BrickWithSpeedUp;
+import SpecialEntities.SpecialEntityManager;
+import SpecialEntities.SpeedUpBoost;
 import config.config;
 import entities.*;
 import tiles.Tile;
@@ -48,6 +51,12 @@ public class Map {
     private EntityManager entityManager;
 
     /**
+     * Zarządzanie jednostkami specjalnymi
+     */
+
+    private SpecialEntityManager specialEntityManager;
+
+    /**
      * Konstruktor poziomu
      * @param handler obsługa zdarzeń
      */
@@ -55,9 +64,10 @@ public class Map {
     public Map(Handler handler){
     this.handler=handler;
     entityManager=new EntityManager(handler, new Player(handler,32,32));
+    specialEntityManager=new SpecialEntityManager(handler);
     //entityManager.addEntity(new Bomb(handler,300,300));
     //entityManager.addEntity(new Enemy(handler,200,200));
-    //entityManager.addEntity(new Fire(handler,200,200,3));
+    //specialEntityManager.addSpecialEntity(new SpeedUpBoost(handler,64,32));
 
     loadMap();
     loadEntities();
@@ -73,6 +83,7 @@ public class Map {
 
     public void update(){
 entityManager.update();
+specialEntityManager.update();
     }
 
     /**
@@ -87,13 +98,14 @@ for(int y=0;y<height;y++){
     }
 }
 entityManager.render(g);
+specialEntityManager.render(g);
     }
 
     /**
      * Pobranie bloku
      * @param x położenie bloku w płaszczyźnie x
      * @param y położenie bloku w płaszczyźnie y
-     * @return
+     * @return blok
      */
 
     public Tile getTile(int x,int y){
@@ -110,8 +122,8 @@ entityManager.render(g);
      * Załadowanie bloków na mapę
      */
 
-    private void loadMap(){
-        String level=config.level1;
+    public void loadMap(){
+        String level=config.level2;
         String[] tokens=level.split("\\s+");
 width=config.levelWidth;
 height=config.levelHeight;
@@ -131,16 +143,15 @@ for(int y=0;y<height;y++){
      * Załadowanie jednostek na mapę
      */
 
-    private void loadEntities(){
+    public void loadEntities(){
         int x=0;
         int y=0;
         int w=0;
         int h=0;
 
-       //entityManager=new EntityManager(handler, new Player(handler,32,32));
 
 
-        String level=config.level1;
+        String level=config.level2;
 
         for (int i=0; i<level.length(); i++) {
             char item = level.charAt(i);
@@ -165,6 +176,11 @@ for(int y=0;y<height;y++){
 
                 case '3':
                     entityManager.addEntity(new Enemy(handler,x,y));
+                    x+=32;
+                    break;
+
+                case '7':
+                    entityManager.addEntity(new BrickWithSpeedUp(handler,x,y));
                     x+=32;
                     break;
 

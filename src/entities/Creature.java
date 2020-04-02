@@ -14,8 +14,8 @@ public abstract class Creature extends Entity{
      */
 
     public static final float DEFAULT_SPEED = 3.0f;
-    public static final int DEFAULT_CREATURE_WIDTH=32;
-    public static final int DEFAULT_CREATURE_HEIGHT=32;
+    public static final int DEFAULT_CREATURE_WIDTH=Tile.DEFAULT_TILEWIDTH;
+    public static final int DEFAULT_CREATURE_HEIGHT=Tile.DEFAULT_TILEHEIGHT;
 
 
 
@@ -78,7 +78,7 @@ public abstract class Creature extends Entity{
 
 
 
-    //GETTERS AND SETTERS
+
     public int getHealth() {
         return health;
     }

@@ -95,6 +95,54 @@ public final class config {
     public static float defaultPlayerSpeed;
 
     /**
+     * Szerokość oraz wysokość bloku
+     */
+
+    public static int tileWidth,tileHeight;
+
+    /**
+     * Szerokość i wysokość ognia w lewą i prawą stronę
+     */
+
+    public static int fireXwidth,fireXheight;
+
+    /**
+     * Szerokość i wysokość ognia w górę i w dół
+     */
+
+    public static int fireYwidth,fireYheight;
+
+    /**
+     * Czas życia bomby w milisekundach
+     */
+
+    public static int timeToBoom;
+
+    /**
+     * Punkty za zniszczenie wroga
+     */
+
+    public static int pointsForEnemy;
+
+    /**
+     * Punkty za przejście poziomu
+     */
+
+    public static int pointsForPassingLevel;
+
+    /**
+     * Punkty za pojedyncze zachowane życie
+     */
+
+    public static int pointsForLife;
+
+    /**
+     * Czas an przejście gry
+     */
+
+    public static int gameTime;
+
+    /**
      * Metoda parsująca plik config.xml z klasą java
      */
 
@@ -111,7 +159,9 @@ public final class config {
     }
 
     private config(){}
-
+    /**
+     * Metoda parsująca plik config.xml z klasą java
+     */
     public static void parseConfig(){
         try{
             File xmlInputFile = new File(xmlConfig);
@@ -126,6 +176,19 @@ public final class config {
             rulesText=doc.getElementsByTagName("rulesText").item(0).getTextContent();
             fps=Integer.parseInt(doc.getElementsByTagName("defaultFps").item(0).getTextContent());
             defaultPlayerSpeed=Float.parseFloat(doc.getElementsByTagName("defaultPlayerSpeed").item(0).getTextContent());
+            tileWidth=Integer.parseInt(doc.getElementsByTagName("tileWidth").item(0).getTextContent());
+            tileHeight=Integer.parseInt(doc.getElementsByTagName("tileHeight").item(0).getTextContent());
+            fireXwidth=Integer.parseInt(doc.getElementsByTagName("fireXwidth").item(0).getTextContent());
+            fireXheight=Integer.parseInt(doc.getElementsByTagName("fireXheight").item(0).getTextContent());
+            fireYwidth=Integer.parseInt(doc.getElementsByTagName("fireYwidth").item(0).getTextContent());
+            fireYheight=Integer.parseInt(doc.getElementsByTagName("fireYheight").item(0).getTextContent());
+            timeToBoom=Integer.parseInt(doc.getElementsByTagName("timeToBoom").item(0).getTextContent());
+            pointsForEnemy=Integer.parseInt(doc.getElementsByTagName("pointsForEnemy").item(0).getTextContent());
+            pointsForPassingLevel=Integer.parseInt(doc.getElementsByTagName("pointsForPassingLevel").item(0).getTextContent());
+            pointsForLife=Integer.parseInt(doc.getElementsByTagName("pointsForLife").item(0).getTextContent());
+            gameTime=Integer.parseInt(doc.getElementsByTagName("gameTime").item(0).getTextContent());
+
+
 
 
         } catch (ParserConfigurationException e) {
@@ -137,7 +200,9 @@ public final class config {
         }
 
     }
-
+    /**
+     * Metoda parsująca plik levels.xml z klasą java
+     */
     public static void parseLevels(){
         try{
             File xmlInputFileL = new File(xmlLevels);

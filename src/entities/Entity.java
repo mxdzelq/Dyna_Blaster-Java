@@ -66,6 +66,10 @@ public abstract class Entity {
 
     public abstract void die();
 
+    /**
+     * Otrzymanie obrażeń przez jednostkę z obsługą zniszczenia jednostki
+     */
+
     public void hurt(){
         health-=1;
         if(health<=0){

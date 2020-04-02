@@ -23,7 +23,7 @@ public class Assets {
      * Zmienna przechowująca obrazy, które nie wymagają animacji
      */
 
-    public static BufferedImage brick,wall,enemy,bomb,grass;
+    public static BufferedImage brick,wall,enemy,grass,speedUp;
 
     /**
      * Tablica przechowująca obrazy, które wymagają animacji
@@ -31,8 +31,15 @@ public class Assets {
 
     public static BufferedImage[] player_down, player_up, player_left, player_right;
 
+    /**
+     * Animacja wybuchu bomby
+     */
 
     public static BufferedImage[] bomb_boom;
+
+    /**
+     * Animacja ognia
+     */
 
     public static BufferedImage[] fireRight,fireLeft,fireUp,fireDown;
 
@@ -97,6 +104,6 @@ public class Assets {
     wall=ImageLoader.loadImage("/img/wall.png");
     grass=ImageLoader.loadImage("/img/grass2.png");
     enemy=ImageLoader.loadImage("/img/enemy.png");
-    bomb=sheet.crop(470,0,16,16);
+    speedUp=ImageLoader.loadImage("/img/iSpeed.png");
     }
 }

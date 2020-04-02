@@ -1,5 +1,7 @@
 package tiles;
 
+import config.config;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
@@ -12,7 +14,7 @@ public class Tile {
      * Tablica przechowująca rodzaje bloków
      */
 
-    public static Tile[] tiles=new Tile[10];
+    public static Tile[] tiles=new Tile[50];
 
     /**
      * Blok trawy zapisany o id 0
@@ -30,13 +32,13 @@ public class Tile {
      * Szerokość bloku
      */
 
-    public static final int DEFAULT_TILEWIDTH=32;
+    public static final int DEFAULT_TILEWIDTH= config.tileWidth;
 
     /**
      * Wysokość bloku
      */
 
-    public static final int DEFAULT_TILEHEIGHT=32;
+    public static final int DEFAULT_TILEHEIGHT=config.tileHeight;
 
     /**
      * Zmienna opisująca teksturę bloku

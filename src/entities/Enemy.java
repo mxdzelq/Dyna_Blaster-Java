@@ -174,7 +174,6 @@ public class Enemy extends Creature {
             player.setHealth(player.getHealth()-1);
             return true;
         }return false;
-
     }
 
     /**

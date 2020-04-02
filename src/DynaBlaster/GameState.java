@@ -37,6 +37,15 @@ public class GameState extends State{
     @Override
     public void render(Graphics g) {
         map.render(g);
+
+        Font fnt=new Font("arial",1,20);
+
+        g.setFont(fnt);
+        g.setColor(Color.black);
+        g.drawString("Życia: ",10,410);
+        g.drawString(Integer.toString(EntityManager.getPlayer().getHealth()),70,410);
+        g.drawString("Prędkość: ",120,410);
+        g.drawString(Float.toString(EntityManager.getPlayer().getSpeed()),220,410);
     }
 
 

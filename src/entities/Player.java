@@ -23,9 +23,21 @@ public class Player extends Creature {
 
     private Animation animDown, animUp, animLeft, animRight;
 
+    /**
+     * Ruch w płaszczyźnie x i y
+     */
+
     protected float xMove,yMove;
 
+    /**
+     * Obiekt bomby
+     */
+
     Bomb bomb;
+
+    /**
+     * Sprawdzenie czy gracz może umieścić bombę
+     */
 
     private boolean canSetBomb=true;
 
@@ -195,6 +207,16 @@ public class Player extends Creature {
     }
 
     public void die(){}
+
+    /**
+     * Otrzymanie obrażeń
+     */
+
+    public void hurt(){
+        health-=1;
+        x=32;
+        y=32;
+    }
 
     /**
      * Obsługa animacji ruchu
