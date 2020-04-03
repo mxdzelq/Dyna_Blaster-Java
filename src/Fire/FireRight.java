@@ -34,10 +34,11 @@ public class FireRight extends StaticEntity {
      */
     private long timeOfLife=2284;
 
+    /**
+     * Prostokąt kolizji rażenia jednostek
+     */
 
-    private static boolean bombed;
-
-
+    private Rectangle hurtBounds;
     /**
      * Konstruktor ognia skierowanego w prawo
      * @param handler obsługa zdarzeń
@@ -47,10 +48,17 @@ public class FireRight extends StaticEntity {
     public FireRight(Handler handler, float x, float y) {
         super(handler, x, y, config.fireXwidth, config.fireXheight);
 
-            bounds.x=0;
-            bounds.y=10;
-            bounds.width=64;
-            bounds.height=12;
+        bounds.x=0;
+        bounds.y=0;
+        bounds.width=0;
+        bounds.height=0;
+
+        hurtBounds=new Rectangle(0,10,64,12);
+        hurtBounds.x=0;
+        hurtBounds.y=10;
+        hurtBounds.width=64;
+        hurtBounds.height=12;
+
             fireRight=new Animation(571, Assets.fireRight);
             timer=0;
             lastTime=System.currentTimeMillis();
@@ -97,7 +105,7 @@ public class FireRight extends StaticEntity {
         for(Entity e:handler.getMap().getEntityManager().getEntities()){
             if(e.equals(this))
                 continue;
-            if(e.getCollisionBounds(0f,0f).intersects(getCollisionBounds(xOffset, yOffset)))
+            if(e.getCollisionBounds(0f,0f).intersects(getHurtCollisionBounds(xOffset, yOffset)))
                 e.hurt();
         }
     }
@@ -120,4 +128,14 @@ public class FireRight extends StaticEntity {
         return fireRight.getCurrentFrame();
     }
 
+    /**
+     * Pobranie prostokątu kolizji rażenia
+     * @param xOffset 0
+     * @param yOffset 0
+     * @return zwrot prostokąta kolizji
+     */
+
+    public Rectangle getHurtCollisionBounds(float xOffset,float yOffset){
+        return new Rectangle((int)(x+hurtBounds.x+xOffset),(int)(y+hurtBounds.y+yOffset),hurtBounds.width,hurtBounds.height);
+    }
 }

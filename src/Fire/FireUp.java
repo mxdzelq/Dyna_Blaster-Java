@@ -34,6 +34,12 @@ public class FireUp extends StaticEntity {
      */
     private long timeOfLife=2284;
 
+    /**
+     * Prostokąt kolizji rażenia jednostek
+     */
+
+    private Rectangle hurtBounds;
+
 
     /**
      * Konstruktor ognia skierowanego w górę
@@ -44,10 +50,18 @@ public class FireUp extends StaticEntity {
     public FireUp(Handler handler, float x, float y) {
         super(handler, x, y, config.fireYwidth, config.fireYheight);
 
-        bounds.x=10;
+        bounds.x=0;
         bounds.y=0;
-        bounds.width=12;
-        bounds.height=64;
+        bounds.width=0;
+        bounds.height=0;
+
+
+        hurtBounds=new Rectangle(10,0,12,64);
+        hurtBounds.x=10;
+        hurtBounds.y=0;
+        hurtBounds.width=12;
+        hurtBounds.height=64;
+
         fireUp=new Animation(571, Assets.fireUp);
         timer=0;
         lastTime=System.currentTimeMillis();
@@ -93,7 +107,7 @@ public class FireUp extends StaticEntity {
         for(Entity e:handler.getMap().getEntityManager().getEntities()){
             if(e.equals(this))
                 continue;
-            if(e.getCollisionBounds(0f,0f).intersects(getCollisionBounds(xOffset, yOffset)))
+            if(e.getCollisionBounds(0f,0f).intersects(getHurtCollisionBounds(xOffset, yOffset)))
                 e.hurt();
         }
     }
@@ -116,5 +130,14 @@ public class FireUp extends StaticEntity {
         return fireUp.getCurrentFrame();
     }
 
+    /**
+     * Pobranie prostokątu kolizji rażenia
+     * @param xOffset 0
+     * @param yOffset 0
+     * @return zwrot prostokąta kolizji
+     */
 
+    public Rectangle getHurtCollisionBounds(float xOffset,float yOffset){
+        return new Rectangle((int)(x+hurtBounds.x+xOffset),(int)(y+hurtBounds.y+yOffset),hurtBounds.width,hurtBounds.height);
+    }
 }

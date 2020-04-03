@@ -120,6 +120,8 @@ specialEntityManager.render(g);
 
     /**
      * Załadowanie bloków na mapę
+     * 0 - blok trawy
+     * 1 - blok ściany
      */
 
     public void loadMap(){
@@ -141,6 +143,9 @@ for(int y=0;y<height;y++){
 
     /**
      * Załadowanie jednostek na mapę
+     * 2 - cegła
+     * 3 - wróg
+     * 7 - cegła z boosterem prędkości
      */
 
     public void loadEntities(){

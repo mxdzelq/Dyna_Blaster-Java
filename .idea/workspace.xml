@@ -15,6 +15,20 @@
       <change beforePath="$PROJECT_DIR$/javadoc/DynaBlaster/State.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/DynaBlaster/State.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/DynaBlaster/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/DynaBlaster/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/DynaBlaster/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/DynaBlaster/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/FireDown.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/FireDown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/FireLeft.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/FireLeft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/FireRight.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/FireRight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/FireUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/FireUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/Fire/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/Fire/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/BrickWithSpeedUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/BrickWithSpeedUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/FireBoost.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/FireBoost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/NextLevelEntity.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/NextLevelEntity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/SpecialEntity.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/SpecialEntity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/SpecialEntityManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/SpecialEntityManager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/SpeedUpBoost.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/SpeedUpBoost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/SpecialEntities/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/SpecialEntities/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
@@ -23,7 +37,6 @@
       <change beforePath="$PROJECT_DIR$/javadoc/config/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/config/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/entities/Bomb.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/entities/Bomb.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/entities/Brick.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/entities/Brick.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/entities/Creature.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/entities/Creature.html" afterDir="false" />
@@ -54,6 +67,7 @@
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-19.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-20.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-21.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
@@ -66,49 +80,26 @@
       <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/tiles/GrassTile.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tiles/GrassTile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/tiles/Tile.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tiles/Tile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/tiles/WallTile.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tiles/WallTile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/tiles/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tiles/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/tiles/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tiles/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/GameState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireDown.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireLeft.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireRight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/SpecialEntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/SpecialEntityManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/config/levels.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/config/levels.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Brick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Brick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Creature.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/tiles/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/tiles/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config/levels.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/levels.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fire/FireDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireDown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fire/FireLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireLeft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fire/FireRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireRight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fire/FireUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Bomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Brick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Brick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tiles/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +127,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/XDD/simple-rpg-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="tasks" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -201,30 +192,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1585832309920" />
-    <state x="526" y="160" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585832870594">
+    <state x="526" y="160" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585902954757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="526" y="160" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585832870594" />
-    <state x="577" y="154" key="FileChooserDialogImpl" timestamp="1585482090677">
+    <state x="526" y="160" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585902954757" />
+    <state x="577" y="154" key="FileChooserDialogImpl" timestamp="1585902018871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="577" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585482090677" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1585832901127">
+    <state x="577" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585902018871" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1585902966506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585832901127" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1585832901127">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585902966506" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1585902966506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585832901127" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1585832901127">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585902966506" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1585902966506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585832901127" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1585832901127">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585902966506" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1585902966506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585832901127" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585902966506" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585316871725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -241,10 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1585316871725" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1585829463726">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1585901798594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585829463726" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585901798594" />
     <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1585821341093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -6,6 +6,10 @@
 <defaultFps>60</defaultFps>
 <playerHealth>3</playerHealth>
 <enemyHealth>1</enemyHealth>
+<pointsForEnemy>500</pointsForEnemy>
+<pointsForPassingLevel>1000</pointsForPassingLevel>
+<pointsForLife>1500</pointsForLife>
+<gameTime>180</gameTime>
 <defaultPlayerSpeed>2.5</defaultPlayerSpeed>
 <tileWidth>32</tileWidth>
 <tileHeight>32</tileHeight>

@@ -1,0 +1,284 @@
+@startuml
+
+title __DYNABLASTER's Class Diagram__\n
+
+  namespace DynaBlaster {
+    class DynaBlaster.Display {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.Game {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.GameState {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.Handler {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.KeyManager {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.Launcher {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.Map {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.MenuState {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.MouseManager {
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    abstract class DynaBlaster.State {
+    }
+  }
+  
+
+  namespace Fire {
+    class Fire.FireDown {
+    }
+  }
+  
+
+  namespace Fire {
+    class Fire.FireLeft {
+    }
+  }
+  
+
+  namespace Fire {
+    class Fire.FireRight {
+    }
+  }
+  
+
+  namespace Fire {
+    class Fire.FireUp {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    class SpecialEntities.BrickWithSpeedUp {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    class SpecialEntities.FireBoost {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    class SpecialEntities.NextLevelEntity {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    abstract class SpecialEntities.SpecialEntity {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    class SpecialEntities.SpecialEntityManager {
+    }
+  }
+  
+
+  namespace SpecialEntities {
+    class SpecialEntities.SpeedUpBoost {
+    }
+  }
+  
+
+  namespace config {
+    class config.config {
+    }
+  }
+  
+
+  namespace entities {
+    class entities.Bomb {
+    }
+  }
+  
+
+  namespace entities {
+    class entities.Brick {
+    }
+  }
+  
+
+  namespace entities {
+    abstract class entities.Creature {
+    }
+  }
+  
+
+  namespace entities {
+    class entities.Enemy {
+    }
+  }
+  
+
+  namespace entities {
+    abstract class entities.Entity {
+    }
+  }
+  
+
+  namespace entities {
+    class entities.EntityManager {
+    }
+  }
+  
+
+  namespace entities {
+    class entities.Player {
+    }
+  }
+  
+
+  namespace entities {
+    abstract class entities.StaticEntity {
+    }
+  }
+  
+
+  namespace gfx {
+    class gfx.Animation {
+    }
+  }
+  
+
+  namespace gfx {
+    class gfx.Assets {
+    }
+  }
+  
+
+  namespace gfx {
+    class gfx.ImageLoader {
+    }
+  }
+  
+
+  namespace gfx {
+    class gfx.SpriteSheet {
+    }
+  }
+  
+
+  namespace tiles {
+    class tiles.GrassTile {
+    }
+  }
+  
+
+  namespace tiles {
+    class tiles.Tile {
+    }
+  }
+  
+
+  namespace tiles {
+    class tiles.WallTile {
+    }
+  }
+  
+
+  DynaBlaster.Game .up.|> java.lang.Runnable
+  DynaBlaster.Game o-- DynaBlaster.State : gameState
+  DynaBlaster.Game o-- DynaBlaster.State : menuState
+  DynaBlaster.Game o-- DynaBlaster.Display : display
+  DynaBlaster.Game o-- DynaBlaster.Handler : handler
+  DynaBlaster.Game o-- DynaBlaster.KeyManager : keyManager
+  DynaBlaster.Game o-- DynaBlaster.MouseManager : mouseManager
+  DynaBlaster.GameState -up-|> DynaBlaster.State
+  DynaBlaster.GameState o-- DynaBlaster.Map : map
+  DynaBlaster.Handler o-- DynaBlaster.Game : game
+  DynaBlaster.Handler o-- DynaBlaster.Map : map
+  DynaBlaster.KeyManager .up.|> java.awt.event.KeyListener
+  DynaBlaster.KeyManager o-- DynaBlaster.Game : game
+  DynaBlaster.KeyManager o-- DynaBlaster.Handler : handler
+  DynaBlaster.Map o-- entities.EntityManager : entityManager
+  DynaBlaster.Map o-- DynaBlaster.Handler : handler
+  DynaBlaster.Map o-- SpecialEntities.SpecialEntityManager : specialEntityManager
+  DynaBlaster.MenuState -up-|> DynaBlaster.State
+  DynaBlaster.MouseManager .up.|> java.awt.event.MouseListener
+  DynaBlaster.MouseManager .up.|> java.awt.event.MouseMotionListener
+  DynaBlaster.State o-- DynaBlaster.Handler : handler
+  Fire.FireDown -up-|> entities.StaticEntity
+  Fire.FireDown o-- gfx.Animation : fireDown
+  Fire.FireLeft -up-|> entities.StaticEntity
+  Fire.FireLeft o-- gfx.Animation : fireLeft
+  Fire.FireRight -up-|> entities.StaticEntity
+  Fire.FireRight o-- gfx.Animation : fireRight
+  Fire.FireUp -up-|> entities.StaticEntity
+  Fire.FireUp o-- gfx.Animation : fireUp
+  SpecialEntities.BrickWithSpeedUp -up-|> entities.StaticEntity
+  SpecialEntities.FireBoost -up-|> SpecialEntities.SpecialEntity
+  SpecialEntities.NextLevelEntity -up-|> SpecialEntities.SpecialEntity
+  SpecialEntities.SpecialEntity o-- DynaBlaster.Handler : handler
+  SpecialEntities.SpecialEntityManager o-- DynaBlaster.Handler : handler
+  SpecialEntities.SpeedUpBoost -up-|> SpecialEntities.SpecialEntity
+  SpecialEntities.SpeedUpBoost o-- entities.Player : player
+  entities.Bomb -up-|> entities.StaticEntity
+  entities.Bomb o-- gfx.Animation : boom
+  entities.Brick -up-|> entities.StaticEntity
+  entities.Creature -up-|> entities.Entity
+  entities.Enemy -up-|> entities.Creature
+  entities.Enemy o-- entities.Player : player
+  entities.Entity o-- DynaBlaster.Handler : handler
+  entities.EntityManager o-- entities.Enemy : enemy
+  entities.EntityManager o-- DynaBlaster.Handler : handler
+  entities.Player -up-|> entities.Creature
+  entities.Player o-- entities.Bomb : bomb
+  entities.Player o-- gfx.Animation : animDown
+  entities.Player o-- gfx.Animation : animLeft
+  entities.Player o-- gfx.Animation : animRight
+  entities.Player o-- gfx.Animation : animUp
+  entities.StaticEntity -up-|> entities.Entity
+  tiles.GrassTile -up-|> tiles.Tile
+  tiles.WallTile -up-|> tiles.Tile
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
