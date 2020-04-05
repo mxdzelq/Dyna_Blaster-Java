@@ -60,6 +60,11 @@ public final class config {
 
     /**
      * Tekst zawierający informacje o poziomach
+     * 0 - blok trawy
+     * 1 - blok ściany
+     * 2 - blok cegły
+     * 3 - przeciwnik
+     * 7 - blok z boosterem szybkości
      */
 
     public static String level1, level2, level3;
