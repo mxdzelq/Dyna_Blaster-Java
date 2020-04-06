@@ -125,7 +125,7 @@ specialEntityManager.render(g);
      */
 
     public void loadMap(){
-        String level=config.level2;
+        String level=config.level1;
         String[] tokens=level.split("\\s+");
 width=config.levelWidth;
 height=config.levelHeight;
@@ -156,7 +156,7 @@ for(int y=0;y<height;y++){
 
 
 
-        String level=config.level2;
+        String level=config.level1;
 
         for (int i=0; i<level.length(); i++) {
             char item = level.charAt(i);
@@ -173,6 +173,7 @@ for(int y=0;y<height;y++){
                 case ' ':
                     x+=32;
                     break;
+
 
                 case '2':
                     entityManager.addEntity(new Brick(handler, x,y));
