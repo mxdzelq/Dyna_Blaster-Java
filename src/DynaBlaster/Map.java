@@ -1,9 +1,8 @@
 package DynaBlaster;
 
+import SpecialEntities.BrickWithNextLevelDoors;
 import SpecialEntities.BrickWithSpeedUp;
 import SpecialEntities.SpecialEntityManager;
-import SpecialEntities.SpeedUpBoost;
-import config.config;
 import entities.*;
 import tiles.Tile;
 
@@ -56,21 +55,32 @@ public class Map {
 
     private SpecialEntityManager specialEntityManager;
 
+    private int id;
+
+    private String level;
+
     /**
      * Konstruktor poziomu
      * @param handler obsługa zdarzeń
      */
 
-    public Map(Handler handler){
-    this.handler=handler;
-    entityManager=new EntityManager(handler, new Player(handler,32,32));
-    specialEntityManager=new SpecialEntityManager(handler);
-    //entityManager.addEntity(new Bomb(handler,300,300));
-    //entityManager.addEntity(new Enemy(handler,200,200));
-    //specialEntityManager.addSpecialEntity(new SpeedUpBoost(handler,64,32));
+    public Map(Handler handler, int id){
+        this.handler=handler;
 
-    loadMap();
-    loadEntities();
+        setId(1);
+        entityManager=new EntityManager(handler, new Player(handler,32,32));
+        specialEntityManager=new SpecialEntityManager(handler);
+
+
+
+         entityManager=new EntityManager(handler, new Player(handler,32,32));
+         specialEntityManager=new SpecialEntityManager(handler);
+        level = config.level1;
+        loadMap(level);
+        loadEntities(level);
+
+
+
 
     entityManager.getPlayer().setX(spawnX);
     entityManager.getPlayer().setY(spawnY);
@@ -82,8 +92,9 @@ public class Map {
      */
 
     public void update(){
-entityManager.update();
-specialEntityManager.update();
+            entityManager.update();
+            specialEntityManager.update();
+
     }
 
     /**
@@ -124,8 +135,9 @@ specialEntityManager.render(g);
      * 1 - blok ściany
      */
 
-    public void loadMap(){
-        String level=config.level1;
+    public void loadMap(String level){
+
+
         String[] tokens=level.split("\\s+");
 width=config.levelWidth;
 height=config.levelHeight;
@@ -148,54 +160,64 @@ for(int y=0;y<height;y++){
      * 7 - cegła z boosterem prędkości
      */
 
-    public void loadEntities(){
-        int x=0;
-        int y=0;
-        int w=0;
-        int h=0;
+    public void loadEntities(String level){
+            int x = 0;
+            int y = 0;
+            int w = 0;
+            int h = 0;
 
 
+            for (int i = 0; i < level.length(); i++) {
+                char item = level.charAt(i);
 
-        String level=config.level1;
+                switch (item) {
+                    case '\n':
+                        y += 32;
+                        if (0 < x) {
+                            w = x;
+                        }
+                        x = 0;
+                        break;
 
-        for (int i=0; i<level.length(); i++) {
-            char item = level.charAt(i);
-
-            switch(item){
-                case '\n':
-                    y+=32;
-                    if(0<x){
-                        w=x;
-                    }
-                    x=0;
-                    break;
-
-                case ' ':
-                    x+=32;
-                    break;
+                    case ' ':
+                        x += 32;
+                        break;
 
 
-                case '2':
-                    entityManager.addEntity(new Brick(handler, x,y));
-                    x+=32;
-                    break;
+                    case '2':
+                        entityManager.addEntity(new Brick(handler, x, y));
+                        x += 32;
+                        break;
 
-                case '3':
-                    entityManager.addEntity(new Enemy(handler,x,y));
-                    x+=32;
-                    break;
+                    case '3':
+                        entityManager.addEntity(new Enemy(handler, x, y));
+                        x += 32;
+                        break;
 
-                case '7':
-                    entityManager.addEntity(new BrickWithSpeedUp(handler,x,y));
-                    x+=32;
-                    break;
+                    case '7':
+                        entityManager.addEntity(new BrickWithSpeedUp(handler, x, y));
+                        x += 32;
+                        break;
 
+                    case '8':
+                        entityManager.addEntity(new BrickWithNextLevelDoors(handler, x, y));
+                        x += 32;
+
+                }
+                h = y;
             }
-            h=y;
-        }
+
     }
 
     public EntityManager getEntityManager() {
         return entityManager;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

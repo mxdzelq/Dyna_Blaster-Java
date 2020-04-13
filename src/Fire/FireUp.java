@@ -1,7 +1,7 @@
 package Fire;
 
 import DynaBlaster.Handler;
-import config.config;
+import DynaBlaster.config;
 import entities.Entity;
 import entities.StaticEntity;
 import gfx.Animation;
@@ -81,7 +81,7 @@ public class FireUp extends StaticEntity {
     private void timerUpdate(){
         timer+=System.currentTimeMillis()-lastTime;
         lastTime=System.currentTimeMillis();
-        System.out.println(timer);
+        //System.out.println(timer);
         if(timer>=timeOfLife)
         {
             hurt();

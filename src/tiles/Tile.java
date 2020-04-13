@@ -1,6 +1,6 @@
 package tiles;
 
-import config.config;
+import DynaBlaster.config;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -97,4 +97,11 @@ g.drawImage(texture,x,y,DEFAULT_TILEWIDTH,DEFAULT_TILEHEIGHT,null);
         return id;
     }
 
+    public static Tile[] getTiles() {
+        return tiles;
+    }
+
+    public static void setTiles(Tile[] tiles) {
+        Tile.tiles = tiles;
+    }
 }

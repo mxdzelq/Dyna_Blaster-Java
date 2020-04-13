@@ -23,7 +23,7 @@ public class Assets {
      * Zmienna przechowująca obrazy, które nie wymagają animacji
      */
 
-    public static BufferedImage brick,wall,enemy,grass,speedUp;
+    public static BufferedImage brick,wall,enemy,grass,speedUp,nextLevelDoors;
 
     /**
      * Tablica przechowująca obrazy, które wymagają animacji
@@ -105,5 +105,6 @@ public class Assets {
     grass=ImageLoader.loadImage("/img/grass2.png");
     enemy=ImageLoader.loadImage("/img/enemy.png");
     speedUp=ImageLoader.loadImage("/img/iSpeed.png");
+    nextLevelDoors=ImageLoader.loadImage("/img/doors.png");
     }
 }

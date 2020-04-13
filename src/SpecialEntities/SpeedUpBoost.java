@@ -1,10 +1,8 @@
 package SpecialEntities;
 
 import DynaBlaster.Handler;
-import config.config;
 import entities.EntityManager;
 import entities.Player;
-import entities.StaticEntity;
 import gfx.Assets;
 import tiles.Tile;
 

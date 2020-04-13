@@ -1,7 +1,7 @@
 package Fire;
 
 import DynaBlaster.Handler;
-import config.config;
+import DynaBlaster.config;
 import entities.Entity;
 import entities.StaticEntity;
 import gfx.Animation;

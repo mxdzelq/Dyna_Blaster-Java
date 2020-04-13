@@ -1,6 +1,5 @@
 package DynaBlaster;
 
-import config.config;
 import entities.EntityManager;
 
 import javax.swing.*;

@@ -2,11 +2,12 @@ package entities;
 
 import DynaBlaster.Handler;
 import DynaBlaster.State;
-import config.config;
+import DynaBlaster.config;
 import gfx.Animation;
 import gfx.Assets;
 import tiles.Tile;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -41,7 +42,11 @@ public class Player extends Creature {
 
     private boolean canSetBomb=true;
 
+    private static int score;
 
+    private static String name;
+
+    JFrame f;
 
     /**
      * Konstruktor gracz
@@ -59,6 +64,7 @@ public class Player extends Creature {
         bounds.height=20;
 
         health=3;
+        score=0;
 
 
         speed= config.defaultPlayerSpeed;
@@ -150,8 +156,11 @@ public class Player extends Creature {
      */
 
     public void checkHealth(){
-        if(this.health==0)
-               State.setState(handler.getGame().menuState);
+        if(this.health==0) {
+            f=new JFrame();
+            name = JOptionPane.showInputDialog(f,"Twój wynik: "+ score + "\n Podaj nick");
+            State.setState(handler.getGame().menuState);
+        }
     }
 
     /**
@@ -239,5 +248,21 @@ public class Player extends Creature {
 
     public void setCanSetBomb(boolean canSetBomb) {
         this.canSetBomb = canSetBomb;
+    }
+
+    public static int getScore() {
+        return score;
+    }
+
+    public static void setScore(int score) {
+        Player.score = score;
+    }
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        Player.name = name;
     }
 }

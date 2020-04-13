@@ -1,8 +1,6 @@
 package DynaBlaster;
 
 
-import config.config;
-
 /**
  * Klasa uruchamiająca program
  */

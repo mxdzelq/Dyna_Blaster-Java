@@ -3,7 +3,7 @@
 title __CONFIG's Class Diagram__\n
 
   namespace config {
-    class config.config {
+    class DynaBlaster.config {
         {static} + defaultPlayerSpeed : float
         {static} + fireXheight : int
         {static} + fireXwidth : int

@@ -1,6 +1,5 @@
 package DynaBlaster;
 
-import config.config;
 import gfx.*;
 
 import java.awt.*;

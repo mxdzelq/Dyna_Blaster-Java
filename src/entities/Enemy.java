@@ -1,6 +1,7 @@
 package entities;
 
 import DynaBlaster.Handler;
+import DynaBlaster.config;
 import gfx.Assets;
 import tiles.Tile;
 
@@ -57,7 +58,9 @@ public class Enemy extends Creature {
     move();
     }
 
-    public void die(){}
+    public void die(){
+        player.setScore(player.getScore()+ config.pointsForEnemy);
+    }
 
     /**
      * Narysowanie stanu przeciwnika

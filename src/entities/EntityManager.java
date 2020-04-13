@@ -82,6 +82,13 @@ public class EntityManager {
         entities.add(e);
     }
 
+    public void clearEntities(){
+        for(int i=0;i<entities.size();i++){
+            Entity e=entities.get(i);
+                entities.remove(e);
+                e.update();
+        }
+    }
 
 
     public static Player getPlayer() {
@@ -107,4 +114,6 @@ public class EntityManager {
     public void setEntities(ArrayList<Entity> entities) {
         this.entities = entities;
     }
+
+
 }

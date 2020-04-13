@@ -1,4 +1,4 @@
-package config;
+package DynaBlaster;
 
 
 import org.w3c.dom.Document;
@@ -67,7 +67,7 @@ public final class config {
      * 7 - blok z boosterem szybkości
      */
 
-    public static String level1, level2, level3;
+    public static String level0, level1, level2, level3;
 
     /**
      * Szerokość poziomu(w blokach 32x32)
@@ -220,9 +220,10 @@ public final class config {
             levelHeight=Integer.parseInt(docL.getElementsByTagName("levelheight").item(0).getTextContent());
             playerSpawnX=Integer.parseInt(docL.getElementsByTagName("playerSpawnX").item(0).getTextContent());
             playerSpawnY=Integer.parseInt(docL.getElementsByTagName("playerSpawnY").item(0).getTextContent());
+            level0=docL.getElementsByTagName("level0").item(0).getTextContent();
             level1=docL.getElementsByTagName("level1").item(0).getTextContent();
             level2=docL.getElementsByTagName("level2").item(0).getTextContent();
-            //level3=docL.getElementsByTagName("level3").item(0).getTextContent();
+            level3=docL.getElementsByTagName("level3").item(0).getTextContent();
 
 
         } catch (ParserConfigurationException e) {

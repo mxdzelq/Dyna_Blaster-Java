@@ -26,8 +26,9 @@ public class GameState extends State{
 
     public GameState(Handler handler){
         super(handler);
-        map = new Map(handler);
+        map = new Map(handler,1);
         handler.setMap(map);
+
     }
     @Override
     public void update() {
@@ -46,6 +47,8 @@ public class GameState extends State{
         g.drawString(Integer.toString(EntityManager.getPlayer().getHealth()),70,410);
         g.drawString("Prędkość: ",120,410);
         g.drawString(Float.toString(EntityManager.getPlayer().getSpeed()),220,410);
+        g.drawString("Wynik: ",270,410);
+        g.drawString(Integer.toString(EntityManager.getPlayer().getScore()),335,410);
     }
 
 
