@@ -68,7 +68,7 @@ public class Bomb extends StaticEntity{
 
         this.bombed=false;
 
-        boom=new Animation(572,Assets.bomb_boom);
+        boom=new Animation(357,Assets.bomb_boom);
 
         timer=0;
         lastTime=System.currentTimeMillis();
@@ -117,25 +117,25 @@ public class Bomb extends StaticEntity{
                 hurt();
                 EntityManager.getPlayer().setCanSetBomb(true);
             }
-            if (timer >= 1716 && fireRightPlaced == false) {
+            if (timer >= 1071 && fireRightPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
                 FireRight fireRight = new FireRight(handler, x + 32, y + 0);
                 entities.add(fireRight);
                 fireRightPlaced = true;
             }
-            if (timer >= 1716 && fireLeftPlaced == false) {
+            if (timer >= 1071 && fireLeftPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
                 FireLeft fireLeft = new FireLeft(handler, x - 64, y + 0);
                 entities.add(fireLeft);
                 fireLeftPlaced = true;
             }
-            if (timer >= 1716 && fireUpPlaced == false) {
+            if (timer >= 1071 && fireUpPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
                 FireUp fireUp = new FireUp(handler, x, y - 64);
                 entities.add(fireUp);
                 fireUpPlaced = true;
             }
-            if (timer >= 1716 && fireDownPlaced == false) {
+            if (timer >= 1071 && fireDownPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
                 FireDown fireDown = new FireDown(handler, x, y + 32);
                 entities.add(fireDown);

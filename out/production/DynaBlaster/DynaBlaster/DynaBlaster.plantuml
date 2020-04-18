@@ -98,16 +98,20 @@ title __DYNABLASTER's Class Diagram__\n
   namespace DynaBlaster {
     class DynaBlaster.Map {
         - height : int
+        - id : int
+        - level : String
         - spawnX : int
         - spawnY : int
         - tiles : int[][]
         - width : int
         + Map()
         + getEntityManager()
+        + getId()
         + getTile()
         + loadEntities()
         + loadMap()
         + render()
+        + setId()
         + update()
     }
   }
@@ -153,6 +157,42 @@ title __DYNABLASTER's Class Diagram__\n
         {abstract} + render()
         {static} + setState()
         {abstract} + update()
+    }
+  }
+  
+
+  namespace DynaBlaster {
+    class DynaBlaster.config {
+        {static} + defaultPlayerSpeed : float
+        {static} + fireXheight : int
+        {static} + fireXwidth : int
+        {static} + fireYheight : int
+        {static} + fireYwidth : int
+        {static} + fps : int
+        {static} + frameTitle : String
+        {static} + gameTime : int
+        {static} + gameWindowHeight : int
+        {static} + gameWindowWidth : int
+        {static} + level0 : String
+        {static} + level1 : String
+        {static} + level2 : String
+        {static} + level3 : String
+        {static} + levelHeight : int
+        {static} + levelWidth : int
+        {static} + playerSpawnX : int
+        {static} + playerSpawnY : int
+        {static} + pointsForEnemy : int
+        {static} + pointsForLife : int
+        {static} + pointsForPassingLevel : int
+        {static} + rulesText : String
+        {static} + tileHeight : int
+        {static} + tileWidth : int
+        {static} + timeToBoom : int
+        {static} + xmlConfig : String
+        {static} + xmlLevels : String
+        {static} + parseConfig()
+        {static} + parseLevels()
+        - config()
     }
   }
   

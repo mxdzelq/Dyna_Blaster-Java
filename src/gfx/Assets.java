@@ -23,7 +23,7 @@ public class Assets {
      * Zmienna przechowująca obrazy, które nie wymagają animacji
      */
 
-    public static BufferedImage brick,wall,enemy,grass,speedUp,nextLevelDoors;
+    public static BufferedImage brick,wall,grass,speedUp,nextLevelDoors;
 
     /**
      * Tablica przechowująca obrazy, które wymagają animacji
@@ -36,6 +36,12 @@ public class Assets {
      */
 
     public static BufferedImage[] bomb_boom;
+
+    /**
+     * Animacja wroga
+     */
+
+    public static BufferedImage[] enemyAnim;
 
     /**
      * Animacja ognia
@@ -61,6 +67,8 @@ public class Assets {
     fireLeft=fireRight;
     fireUp=new BufferedImage[4];
     fireDown=fireUp;
+
+    enemyAnim=new BufferedImage[3];
 
     player_down[0]=sheet.crop(0,0,width,height);
     player_down[1]=sheet.crop(24,0,width,height);
@@ -97,13 +105,13 @@ public class Assets {
         fireUp[3]=sheet.crop(630,16,16,16);
 
 
-
-
+        enemyAnim[0]=sheet.crop(394,233,16,16);
+        enemyAnim[1]=sheet.crop(410,233,16,16);
+        enemyAnim[2]=sheet.crop(426,233,16,16);
 
     brick=ImageLoader.loadImage("/img/block.png");
     wall=ImageLoader.loadImage("/img/wall.png");
     grass=ImageLoader.loadImage("/img/grass2.png");
-    enemy=ImageLoader.loadImage("/img/enemy.png");
     speedUp=ImageLoader.loadImage("/img/iSpeed.png");
     nextLevelDoors=ImageLoader.loadImage("/img/doors.png");
     }

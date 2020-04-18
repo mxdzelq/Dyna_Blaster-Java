@@ -1,11 +1,10 @@
 package DynaBlaster;
 
-import gfx.Assets;
+
 import entities.*;
 
 import java.awt.*;
 
-import static gfx.Assets.enemy;
 
 /**
  * Klasa stanu gry

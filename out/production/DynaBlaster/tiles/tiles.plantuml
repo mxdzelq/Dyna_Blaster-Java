@@ -20,8 +20,10 @@ title __TILES's Class Diagram__\n
         # texture : BufferedImage
         + Tile()
         + getId()
+        {static} + getTiles()
         + isSolid()
         + render()
+        {static} + setTiles()
         + update()
     }
   }

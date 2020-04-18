@@ -115,6 +115,7 @@ title __ENTITIES's Class Diagram__\n
         {static} - player : Player
         + EntityManager()
         + addEntity()
+        + clearEntities()
         + getEnemy()
         + getEntities()
         + getHandler()
@@ -133,10 +134,15 @@ title __ENTITIES's Class Diagram__\n
     class entities.Player {
         # xMove : float
         # yMove : float
+        ~ f : JFrame
         - canSetBomb : boolean
+        {static} - name : String
+        {static} - score : int
         + Player()
         + checkHealth()
         + die()
+        {static} + getName()
+        {static} + getScore()
         + hurt()
         + move()
         + moveX()
@@ -144,6 +150,8 @@ title __ENTITIES's Class Diagram__\n
         + render()
         + setBomb()
         + setCanSetBomb()
+        {static} + setName()
+        {static} + setScore()
         + update()
         - getCurrentAnimationFrame()
         - getInput()

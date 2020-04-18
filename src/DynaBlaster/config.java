@@ -65,6 +65,7 @@ public final class config {
      * 2 - blok cegły
      * 3 - przeciwnik
      * 7 - blok z boosterem szybkości
+     * 8 - blok z przejściem na koljeny poziom
      */
 
     public static String level0, level1, level2, level3;
@@ -106,6 +107,24 @@ public final class config {
     public static int tileWidth,tileHeight;
 
     /**
+     * Początkowa liczba żyć gracza
+     */
+
+    public static int playerHealth;
+
+    /**
+     * Życia wroga
+     */
+
+    public static int enemyHealth;
+
+    /**
+     * Prędkość wroga
+     */
+
+    public static int enemySpeed;
+
+    /**
      * Szerokość i wysokość ognia w lewą i prawą stronę
      */
 
@@ -116,6 +135,12 @@ public final class config {
      */
 
     public static int fireYwidth,fireYheight;
+
+    /**
+     * Czas życia ognia w milisekundach
+     */
+
+    public static int fireTimeOfLife;
 
     /**
      * Czas życia bomby w milisekundach
@@ -188,11 +213,14 @@ public final class config {
             fireYwidth=Integer.parseInt(doc.getElementsByTagName("fireYwidth").item(0).getTextContent());
             fireYheight=Integer.parseInt(doc.getElementsByTagName("fireYheight").item(0).getTextContent());
             timeToBoom=Integer.parseInt(doc.getElementsByTagName("timeToBoom").item(0).getTextContent());
+            enemySpeed=Integer.parseInt(doc.getElementsByTagName("enemySpeed").item(0).getTextContent());
+            enemyHealth=Integer.parseInt(doc.getElementsByTagName("enemyHealth").item(0).getTextContent());
+            playerHealth=Integer.parseInt(doc.getElementsByTagName("playerHealth").item(0).getTextContent());
             pointsForEnemy=Integer.parseInt(doc.getElementsByTagName("pointsForEnemy").item(0).getTextContent());
             pointsForPassingLevel=Integer.parseInt(doc.getElementsByTagName("pointsForPassingLevel").item(0).getTextContent());
             pointsForLife=Integer.parseInt(doc.getElementsByTagName("pointsForLife").item(0).getTextContent());
             gameTime=Integer.parseInt(doc.getElementsByTagName("gameTime").item(0).getTextContent());
-
+            fireTimeOfLife=Integer.parseInt(doc.getElementsByTagName("fireTimeOfLife").item(0).getTextContent());
 
 
 

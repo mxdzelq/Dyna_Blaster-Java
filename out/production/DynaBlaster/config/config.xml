@@ -6,6 +6,7 @@
 <defaultFps>60</defaultFps>
 <playerHealth>3</playerHealth>
 <enemyHealth>1</enemyHealth>
+<enemySpeed>2</enemySpeed>
 <pointsForEnemy>500</pointsForEnemy>
 <pointsForPassingLevel>1000</pointsForPassingLevel>
 <pointsForLife>1500</pointsForLife>
@@ -17,7 +18,8 @@
 <fireXheight>32</fireXheight>
 <fireYwidth>32</fireYwidth>
 <fireYheight>64</fireYheight>
-<timeToBoom>4000</timeToBoom>
+<timeToBoom>2500</timeToBoom>
+<fireTimeOfLife>1429</fireTimeOfLife>
 
     <rulesText>        1.Sterowanie postacią za pomocą WASD, stawianie bomby spacją, pauza p, odpauzowanie o (należy przytrzymać przycisk ok 2sekundy)
         2.Celem jest znalezienia przejścia ukrytego pod jednym z brązowych bloków, jednocześnie unikając przeciwników

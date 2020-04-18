@@ -3,6 +3,16 @@
 title __SPECIALENTITIES's Class Diagram__\n
 
   namespace SpecialEntities {
+    class SpecialEntities.BrickWithNextLevelDoors {
+        + BrickWithNextLevelDoors()
+        + die()
+        + render()
+        + update()
+    }
+  }
+  
+
+  namespace SpecialEntities {
     class SpecialEntities.BrickWithSpeedUp {
         + BrickWithSpeedUp()
         + die()
@@ -23,7 +33,9 @@ title __SPECIALENTITIES's Class Diagram__\n
 
   namespace SpecialEntities {
     class SpecialEntities.NextLevelEntity {
+        ~ f : JFrame
         + NextLevelEntity()
+        + checkCollisionWithPlayer()
         + render()
         + update()
     }
@@ -70,9 +82,11 @@ title __SPECIALENTITIES's Class Diagram__\n
   }
   
 
+  SpecialEntities.BrickWithNextLevelDoors -up-|> entities.StaticEntity
   SpecialEntities.BrickWithSpeedUp -up-|> entities.StaticEntity
   SpecialEntities.FireBoost -up-|> SpecialEntities.SpecialEntity
   SpecialEntities.NextLevelEntity -up-|> SpecialEntities.SpecialEntity
+  SpecialEntities.NextLevelEntity o-- entities.Player : player
   SpecialEntities.SpecialEntity o-- DynaBlaster.Handler : handler
   SpecialEntities.SpecialEntityManager o-- DynaBlaster.Handler : handler
   SpecialEntities.SpeedUpBoost -up-|> SpecialEntities.SpecialEntity

@@ -32,7 +32,7 @@ public class FireDown extends StaticEntity {
      * Czas życia ognia
      */
 
-    private long timeOfLife=2284;
+    private long timeOfLife=config.fireTimeOfLife;
 
     /**
      * Prostokąt kolizji rażenia jednostek
@@ -63,7 +63,7 @@ public class FireDown extends StaticEntity {
         hurtBounds.width=12;
         hurtBounds.height=64;
 
-        fireDown=new Animation(571, Assets.fireDown);
+        fireDown=new Animation(357, Assets.fireDown);
         timer=0;
         lastTime=System.currentTimeMillis();
         timerUpdate();
@@ -82,7 +82,6 @@ public class FireDown extends StaticEntity {
     private void timerUpdate(){
         timer+=System.currentTimeMillis()-lastTime;
         lastTime=System.currentTimeMillis();
-        System.out.println(timer);
         if(timer>=timeOfLife)
         {
             hurt();

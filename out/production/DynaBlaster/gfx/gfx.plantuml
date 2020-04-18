@@ -28,6 +28,7 @@ title __GFX's Class Diagram__\n
         {static} + fireUp : BufferedImage[]
         {static} + grass : BufferedImage
         {static} + height : int
+        {static} + nextLevelDoors : BufferedImage
         {static} + player_down : BufferedImage[]
         {static} + player_left : BufferedImage[]
         {static} + player_right : BufferedImage[]

@@ -1,6 +1,7 @@
 package entities;
 
 import DynaBlaster.Handler;
+import DynaBlaster.Scores;
 import DynaBlaster.State;
 import DynaBlaster.config;
 import gfx.Animation;
@@ -63,7 +64,7 @@ public class Player extends Creature {
         bounds.width=16;
         bounds.height=20;
 
-        health=3;
+        health=config.playerHealth;
         score=0;
 
 
@@ -117,7 +118,6 @@ public class Player extends Creature {
 
     public void moveX(){
         if(xMove>0){//Ruch w prawo
-
             int tx=(int)(x+xMove+bounds.x+bounds.width) / Tile.DEFAULT_TILEWIDTH;
             if(!collisionWithTile(tx, (int)(y+bounds.y) /Tile.DEFAULT_TILEHEIGHT) && (!collisionWithTile(tx, (int)(y+bounds.y+bounds.height) /Tile.DEFAULT_TILEHEIGHT))){
                 x+=xMove;
@@ -159,7 +159,9 @@ public class Player extends Creature {
         if(this.health==0) {
             f=new JFrame();
             name = JOptionPane.showInputDialog(f,"Twój wynik: "+ score + "\n Podaj nick");
+            Scores.writeScore(name,score);
             State.setState(handler.getGame().menuState);
+            handler.getMap().setId(0);
         }
     }
 
@@ -246,6 +248,10 @@ public class Player extends Creature {
         }
     }
 
+
+
+
+
     public void setCanSetBomb(boolean canSetBomb) {
         this.canSetBomb = canSetBomb;
     }
@@ -264,5 +270,21 @@ public class Player extends Creature {
 
     public static void setName(String name) {
         Player.name = name;
+    }
+
+    public float getxMove() {
+        return xMove;
+    }
+
+    public void setxMove(float xMove) {
+        this.xMove = xMove;
+    }
+
+    public float getyMove() {
+        return yMove;
+    }
+
+    public void setyMove(float yMove) {
+        this.yMove = yMove;
     }
 }

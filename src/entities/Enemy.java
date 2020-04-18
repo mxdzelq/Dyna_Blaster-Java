@@ -2,10 +2,12 @@ package entities;
 
 import DynaBlaster.Handler;
 import DynaBlaster.config;
+import gfx.Animation;
 import gfx.Assets;
 import tiles.Tile;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 /**
  * Klasa przeciwnika
@@ -30,6 +32,12 @@ public class Enemy extends Creature {
     Player player=EntityManager.getPlayer();
 
     /**
+     * Animacja wroga
+     */
+
+    private Animation enemyAnim_;
+
+    /**
      * Konstruktor przeciwnika
      * @param handler obsługa zdarzeń
      * @param x położenie przeciwnika w płaszczyźnie x
@@ -44,7 +52,10 @@ public class Enemy extends Creature {
         bounds.y=4;
         bounds.width=26;
         bounds.height=24;
-        speed=2;
+        speed=config.enemySpeed;
+        health=config.enemyHealth;
+
+        enemyAnim_=new Animation(300,Assets.enemyAnim);
 
         currentDirection=DIR_DOWN;
     }
@@ -55,6 +66,7 @@ public class Enemy extends Creature {
      */
     @Override
     public void update() {
+    enemyAnim_.update();
     move();
     }
 
@@ -69,10 +81,14 @@ public class Enemy extends Creature {
 
     @Override
     public void render(Graphics g) {
-    g.drawImage(Assets.enemy, (int)x,(int)y,width,height,null);
-    //g.setColor(Color.red);
-    //g.fillRect((int)(x+bounds.x),(int)(y+bounds.y),bounds.width,bounds.height);
+    g.drawImage(getCurrentAnimationFrame(), (int)x,(int)y,width,height,null);
+
     }
+
+    private BufferedImage getCurrentAnimationFrame(){
+        return enemyAnim_.getCurrentFrame();
+    }
+
 
     /**
      * Ruch przeciwnika(jednocześnie sprawdzający czy występuje kolizja z graczem)

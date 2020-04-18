@@ -55,7 +55,15 @@ public class Map {
 
     private SpecialEntityManager specialEntityManager;
 
+    /**
+     * Numer poziomu
+     */
+
     private int id;
+
+    /**
+     * String opisujący wygląd poziomu
+     */
 
     private String level;
 
@@ -67,15 +75,15 @@ public class Map {
     public Map(Handler handler, int id){
         this.handler=handler;
 
-        setId(1);
+        setId(0);
         entityManager=new EntityManager(handler, new Player(handler,32,32));
         specialEntityManager=new SpecialEntityManager(handler);
 
 
 
-         entityManager=new EntityManager(handler, new Player(handler,32,32));
-         specialEntityManager=new SpecialEntityManager(handler);
-        level = config.level1;
+        entityManager=new EntityManager(handler, new Player(handler,32,32));
+        specialEntityManager=new SpecialEntityManager(handler);
+        level = config.level0;
         loadMap(level);
         loadEntities(level);
 
@@ -158,6 +166,7 @@ for(int y=0;y<height;y++){
      * 2 - cegła
      * 3 - wróg
      * 7 - cegła z boosterem prędkości
+     * 8 - cegła z przejściem na kolejny poziom
      */
 
     public void loadEntities(String level){

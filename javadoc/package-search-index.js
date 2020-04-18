@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"config"},{"l":"DynaBlaster"},{"l":"entities"},{"l":"Fire"},{"l":"gfx"},{"l":"SpecialEntities"},{"l":"tiles"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"DynaBlaster"},{"l":"entities"},{"l":"Fire"},{"l":"gfx"},{"l":"SpecialEntities"},{"l":"tiles"}]

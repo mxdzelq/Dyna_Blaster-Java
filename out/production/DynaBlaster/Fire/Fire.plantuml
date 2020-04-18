@@ -40,7 +40,6 @@ title __FIRE's Class Diagram__\n
 
   namespace Fire {
     class Fire.FireRight {
-        {static} - bombed : boolean
         - hurtBounds : Rectangle
         - lastTime : long
         - timeOfLife : long

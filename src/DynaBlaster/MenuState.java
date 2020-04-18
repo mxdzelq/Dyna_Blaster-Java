@@ -1,6 +1,7 @@
 package DynaBlaster;
 
 import entities.EntityManager;
+import entities.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,21 +26,51 @@ public class MenuState extends State{
         int mx=handler.getMouseManager().getMouseX();
         int my=handler.getMouseManager().getMouseY();
 
+        /**
+         * Rozpoczęcie nowej gry
+         */
+
         if(handler.getMouseManager().mouseOver(mx,my,250,20,150,50) && (handler.getMouseManager().isLeftPressed())) {
             State.setState(handler.getGame().gameState);
-            EntityManager.getPlayer().setHealth(3);
+            if(handler.getMap().getId()==0) {
+                new Map(handler,0);
+                EntityManager.getPlayer().setHealth(config.playerHealth);
+                EntityManager.getPlayer().setSpeed(config.defaultPlayerSpeed);
+                EntityManager.getPlayer().setScore(0);
+                Player player = EntityManager.getPlayer();
+                handler.getMap().getEntityManager().getEntities().clear();
+                handler.getMap().getEntityManager().getEntities().add(player);
+                handler.getMap().setId(1);
+                handler.getMap().loadEntities(config.level1);
+                handler.getMap().loadMap(config.level1);
+            }
             handler.getMouseManager().unpress();
         }
+
+        /**
+         * Wyświetlenie zasad
+         */
 
         if(handler.getMouseManager().mouseOver(mx,my,250,90,150,50) && (handler.getMouseManager().isLeftPressed())) {
             JOptionPane.showMessageDialog(null, config.rulesText);
             handler.getMouseManager().unpress();
         }
 
+        /**
+         * Wyświetlenie najwyższych wyników
+         */
+
         if(handler.getMouseManager().mouseOver(mx,my,250,160,150,50) && (handler.getMouseManager().isLeftPressed())) {
-            JOptionPane.showMessageDialog(null, "Najwyższe wyniki"+"\n"+"test");
+            Scores scores = new Scores();
+            scores.update();
+            JOptionPane.showMessageDialog(null, scores.getHighScores());
             handler.getMouseManager().unpress();
+
         }
+
+        /**
+         * Wyjście z gry
+         */
 
         if(handler.getMouseManager().mouseOver(mx,my,250,230,150,50) && (handler.getMouseManager().isLeftPressed())){
             System.exit(0);

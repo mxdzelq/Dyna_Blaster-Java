@@ -1,6 +1,7 @@
 package SpecialEntities;
 
 import DynaBlaster.Handler;
+import DynaBlaster.Scores;
 import DynaBlaster.State;
 import DynaBlaster.config;
 import entities.EntityManager;
@@ -17,12 +18,15 @@ import java.awt.*;
 
 public class NextLevelEntity extends SpecialEntity {
 
+    /**
+     * Ramka potrzebna do wpisana nicku przez gracza
+     */
+
     JFrame f;
 
     Player player= EntityManager.getPlayer();
     /**
-     * Konstruktor jednostki specjalnej
-     *
+     * Konstruktor jednostki specjalnej z przejściem na kolejny poziom
      * @param handler obsługa zdarzeń
      * @param x       położenie w płaszczyźnie x
      * @param y       położenie w płaszczyźnie y
@@ -42,6 +46,13 @@ public class NextLevelEntity extends SpecialEntity {
         g.drawImage(Assets.nextLevelDoors,(int)(x),(int)(y),width,height,null);
 
     }
+
+    /**
+     * Sprawdzenie kolizji z graczem i przejście na kolejny poziom
+     * @param xOffset 0
+     * @param yOffset 0
+     * @return zwrot czy kolizja występuje
+     */
 
     public final boolean checkCollisionWithPlayer(float xOffset, float yOffset){
         if(getCollisionBounds(0f,0f).intersects(player.getCollisionBounds(xOffset,yOffset))){
@@ -72,11 +83,14 @@ public class NextLevelEntity extends SpecialEntity {
                 return true;
             }
             if(handler.getMap().getId()==3){
+                handler.getMap().getEntityManager().getEntities().clear();
+                handler.getMap().setId(0);
                 EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+config.pointsForPassingLevel);
                 EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+(EntityManager.getPlayer().getHealth()*config.pointsForLife));
                 f=new JFrame();
                 String name = JOptionPane.showInputDialog(f,"Twój wynik: "+ EntityManager.getPlayer().getScore() + "\n Podaj nick");
                 EntityManager.getPlayer().setName(name);
+                Scores.writeScore(EntityManager.getPlayer().getName(), EntityManager.getPlayer().getScore());
                 State.setState(handler.getGame().menuState);
             }
 
