@@ -203,6 +203,7 @@ for(int y=0;y<height;y++){
                         x += 32;
                         break;
 
+
                     case '7':
                         entityManager.addEntity(new BrickWithSpeedUp(handler, x, y));
                         x += 32;

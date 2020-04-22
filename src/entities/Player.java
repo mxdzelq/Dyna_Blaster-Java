@@ -43,9 +43,23 @@ public class Player extends Creature {
 
     private boolean canSetBomb=true;
 
+    /**
+     * Wynik gracza
+     */
+
     private static int score;
 
+    /**
+     * Nick gracza
+     */
+
     private static String name;
+
+    /**
+     * Zmienne do obługi czasu gry
+     */
+
+    private static int timeLeft, lastTime;
 
     JFrame f;
 
@@ -78,6 +92,10 @@ public class Player extends Creature {
         yMove=0;
 
         this.bomb=bomb;
+
+        timeLeft=config.gameTime *1000;
+
+        lastTime= (int) System.currentTimeMillis();
     }
 
     /**
@@ -94,6 +112,7 @@ public class Player extends Creature {
         checkHealth();
         getInput();
         move();
+        timerUpdate();
 
 
     }
@@ -158,7 +177,8 @@ public class Player extends Creature {
     public void checkHealth(){
         if(this.health==0) {
             f=new JFrame();
-            name = JOptionPane.showInputDialog(f,"Twój wynik: "+ score + "\n Podaj nick");
+            score=score+(timeLeft/1000);
+            name = JOptionPane.showInputDialog(f,"Umarłeś! \nTwój wynik: "+ score + "\nPodaj nick");
             Scores.writeScore(name,score);
             State.setState(handler.getGame().menuState);
             handler.getMap().setId(0);
@@ -248,8 +268,24 @@ public class Player extends Creature {
         }
     }
 
+    /**
+     * Aktualizacja pozostałęgo czasu gry
+     */
 
+    private void timerUpdate(){
 
+            timeLeft -= System.currentTimeMillis() - lastTime;
+            lastTime = (int) System.currentTimeMillis();
+
+    if(timeLeft/1000 <=0){
+        f=new JFrame();
+        name = JOptionPane.showInputDialog(f,"Koniec czasu \nTwój wynik: "+ score + "\nPodaj nick");
+        Scores.writeScore(name,score);
+        State.setState(handler.getGame().menuState);
+        handler.getMap().setId(0);
+    }
+
+}
 
 
     public void setCanSetBomb(boolean canSetBomb) {
@@ -286,5 +322,13 @@ public class Player extends Creature {
 
     public void setyMove(float yMove) {
         this.yMove = yMove;
+    }
+
+    public static int getTimeLeft() {
+        return timeLeft;
+    }
+
+    public static void setTimeLeft(int timeLeft) {
+        Player.timeLeft = timeLeft;
     }
 }

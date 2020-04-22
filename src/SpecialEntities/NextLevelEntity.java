@@ -86,9 +86,9 @@ public class NextLevelEntity extends SpecialEntity {
                 handler.getMap().getEntityManager().getEntities().clear();
                 handler.getMap().setId(0);
                 EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+config.pointsForPassingLevel);
-                EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+(EntityManager.getPlayer().getHealth()*config.pointsForLife));
+                EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+(EntityManager.getPlayer().getHealth()*config.pointsForLife) + (EntityManager.getPlayer().getTimeLeft()/1000));
                 f=new JFrame();
-                String name = JOptionPane.showInputDialog(f,"Twój wynik: "+ EntityManager.getPlayer().getScore() + "\n Podaj nick");
+                String name = JOptionPane.showInputDialog(f,"Koniec gry, gratulacje! \nTwój wynik: "+ EntityManager.getPlayer().getScore() + "\n Podaj nick");
                 EntityManager.getPlayer().setName(name);
                 Scores.writeScore(EntityManager.getPlayer().getName(), EntityManager.getPlayer().getScore());
                 State.setState(handler.getGame().menuState);

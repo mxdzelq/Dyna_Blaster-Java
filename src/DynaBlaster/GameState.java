@@ -48,6 +48,8 @@ public class GameState extends State{
         g.drawString(Float.toString(EntityManager.getPlayer().getSpeed()),220,410);
         g.drawString("Wynik: ",270,410);
         g.drawString(Integer.toString(EntityManager.getPlayer().getScore()),335,410);
+        g.drawString("Pozostały czas: ",385,410);
+        g.drawString(Integer.toString(EntityManager.getPlayer().getTimeLeft()/1000),535,410);
     }
 
 

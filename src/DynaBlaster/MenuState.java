@@ -37,6 +37,7 @@ public class MenuState extends State{
                 EntityManager.getPlayer().setHealth(config.playerHealth);
                 EntityManager.getPlayer().setSpeed(config.defaultPlayerSpeed);
                 EntityManager.getPlayer().setScore(0);
+                EntityManager.getPlayer().setTimeLeft(config.gameTime*1000);
                 Player player = EntityManager.getPlayer();
                 handler.getMap().getEntityManager().getEntities().clear();
                 handler.getMap().getEntityManager().getEntities().add(player);

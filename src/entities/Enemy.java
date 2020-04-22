@@ -37,6 +37,8 @@ public class Enemy extends Creature {
 
     private Animation enemyAnim_;
 
+
+
     /**
      * Konstruktor przeciwnika
      * @param handler obsługa zdarzeń
@@ -47,6 +49,7 @@ public class Enemy extends Creature {
 
     public Enemy(Handler handler, float x, float y) {
         super(handler, x, y, Creature.DEFAULT_CREATURE_WIDTH, Creature.DEFAULT_CREATURE_HEIGHT);
+
 
         bounds.x=4;
         bounds.y=4;
