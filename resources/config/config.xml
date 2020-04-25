@@ -23,5 +23,5 @@
 
     <rulesText>        1.Sterowanie postacią za pomocą WASD, stawianie bomby spacją, pauza p, odpauzowanie o (należy przytrzymać przycisk ok 2sekundy)
         2.Celem jest znalezienia przejścia ukrytego pod jednym z brązowych bloków, jednocześnie unikając przeciwników
-        3.Gracz ma 3 życia, gra kończy się po ich stracie lub po przejściu wszystkich poziomów </rulesText>
+        3.Gracz ma 3 życia, gra kończy się po ich stracie, końcu czasu lub po przejściu wszystkich poziomów </rulesText>
 </config>

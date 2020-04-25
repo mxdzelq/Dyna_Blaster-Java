@@ -2,37 +2,43 @@
 
 title __TILES's Class Diagram__\n
 
-  namespace tiles {
-    class tiles.GrassTile {
-        + GrassTile()
+  namespace  {
+    namespace iles {
+      class tiles.GrassTile {
+          + GrassTile()
+      }
     }
   }
   
 
-  namespace tiles {
-    class tiles.Tile {
-        {static} + DEFAULT_TILEHEIGHT : int
-        {static} + DEFAULT_TILEWIDTH : int
-        {static} + grassTile : Tile
-        {static} + tiles : Tile[]
-        {static} + wallTile : Tile
-        # id : int
-        # texture : BufferedImage
-        + Tile()
-        + getId()
-        {static} + getTiles()
-        + isSolid()
-        + render()
-        {static} + setTiles()
-        + update()
+  namespace  {
+    namespace iles {
+      class tiles.Tile {
+          {static} + DEFAULT_TILEHEIGHT : int
+          {static} + DEFAULT_TILEWIDTH : int
+          {static} + grassTile : Tile
+          {static} + tiles : Tile[]
+          {static} + wallTile : Tile
+          # id : int
+          # texture : BufferedImage
+          + Tile()
+          + getId()
+          {static} + getTiles()
+          + isSolid()
+          + render()
+          {static} + setTiles()
+          + update()
+      }
     }
   }
   
 
-  namespace tiles {
-    class tiles.WallTile {
-        + WallTile()
-        + isSolid()
+  namespace  {
+    namespace iles {
+      class tiles.WallTile {
+          + WallTile()
+          + isSolid()
+      }
     }
   }
   

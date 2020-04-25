@@ -2,82 +2,96 @@
 
 title __SPECIALENTITIES's Class Diagram__\n
 
-  namespace SpecialEntities {
-    class SpecialEntities.BrickWithNextLevelDoors {
-        + BrickWithNextLevelDoors()
-        + die()
-        + render()
-        + update()
+  namespace  {
+    namespace SpecialEntities {
+      class SpecialEntities.BrickWithNextLevelDoors {
+          + BrickWithNextLevelDoors()
+          + die()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.BrickWithSpeedUp {
-        + BrickWithSpeedUp()
-        + die()
-        + render()
-        + update()
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.BrickWithSpeedUp {
+          + BrickWithSpeedUp()
+          + die()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.FireBoost {
-        + FireBoost()
-        + render()
-        + update()
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.FireBoost {
+          + FireBoost()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.NextLevelEntity {
-        ~ f : JFrame
-        + NextLevelEntity()
-        + checkCollisionWithPlayer()
-        + render()
-        + update()
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.NextLevelEntity {
+          ~ f : JFrame
+          + NextLevelEntity()
+          + checkCollisionWithPlayer()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    abstract class SpecialEntities.SpecialEntity {
-        # active : boolean
-        # bounds : Rectangle
-        # height : int
-        # width : int
-        # x : float
-        # y : float
-        + SpecialEntity()
-        + getCollisionBounds()
-        + isActive()
-        {abstract} + render()
-        + setActive()
-        {abstract} + update()
+  namespace  {
+    namespace pecialEntities {
+      abstract class SpecialEntities.SpecialEntity {
+          # active : boolean
+          # bounds : Rectangle
+          # height : int
+          # width : int
+          # x : float
+          # y : float
+          + SpecialEntity()
+          + getCollisionBounds()
+          + isActive()
+          {abstract} + render()
+          + setActive()
+          {abstract} + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.SpecialEntityManager {
-        {static} - specialEntities : ArrayList<SpecialEntity>
-        + SpecialEntityManager()
-        + addSpecialEntity()
-        {static} + getSpecialEntities()
-        + render()
-        + update()
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.SpecialEntityManager {
+          {static} - specialEntities : ArrayList<SpecialEntity>
+          + SpecialEntityManager()
+          + addSpecialEntity()
+          {static} + getSpecialEntities()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.SpeedUpBoost {
-        + SpeedUpBoost()
-        + checkCollisionWithPlayer()
-        + render()
-        + update()
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.SpeedUpBoost {
+          + SpeedUpBoost()
+          + checkCollisionWithPlayer()
+          + render()
+          + update()
+      }
     }
   }
   

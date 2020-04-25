@@ -2,57 +2,65 @@
 
 title __GFX's Class Diagram__\n
 
-  namespace gfx {
-    class gfx.Animation {
-        - frames : BufferedImage[]
-        - index : int
-        - lastTime : long
-        - speed : int
-        - timer : long
-        + Animation()
-        + getCurrentFrame()
-        + getFrame0()
-        + update()
+  namespace  {
+    namespace fx {
+      class gfx.Animation {
+          - frames : BufferedImage[]
+          - index : int
+          - lastTime : long
+          - speed : int
+          - timer : long
+          + Animation()
+          + getCurrentFrame()
+          + getFrame0()
+          + update()
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.Assets {
-        {static} + bomb_boom : BufferedImage[]
-        {static} + brick : BufferedImage
-        {static} + enemy : BufferedImage
-        {static} + fireDown : BufferedImage[]
-        {static} + fireLeft : BufferedImage[]
-        {static} + fireRight : BufferedImage[]
-        {static} + fireUp : BufferedImage[]
-        {static} + grass : BufferedImage
-        {static} + height : int
-        {static} + nextLevelDoors : BufferedImage
-        {static} + player_down : BufferedImage[]
-        {static} + player_left : BufferedImage[]
-        {static} + player_right : BufferedImage[]
-        {static} + player_up : BufferedImage[]
-        {static} + speedUp : BufferedImage
-        {static} + wall : BufferedImage
-        {static} + width : int
-        {static} + init()
+  namespace  {
+    namespace fx {
+      class gfx.Assets {
+          {static} + bomb_boom : BufferedImage[]
+          {static} + brick : BufferedImage
+          {static} + enemyAnim : BufferedImage[]
+          {static} + fireDown : BufferedImage[]
+          {static} + fireLeft : BufferedImage[]
+          {static} + fireRight : BufferedImage[]
+          {static} + fireUp : BufferedImage[]
+          {static} + grass : BufferedImage
+          {static} + height : int
+          {static} + nextLevelDoors : BufferedImage
+          {static} + player_down : BufferedImage[]
+          {static} + player_left : BufferedImage[]
+          {static} + player_right : BufferedImage[]
+          {static} + player_up : BufferedImage[]
+          {static} + speedUp : BufferedImage
+          {static} + wall : BufferedImage
+          {static} + width : int
+          {static} + init()
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.ImageLoader {
-        {static} + loadImage()
+  namespace  {
+    namespace fx {
+      class gfx.ImageLoader {
+          {static} + loadImage()
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.SpriteSheet {
-        - sheet : BufferedImage
-        + SpriteSheet()
-        + crop()
+  namespace  {
+    namespace fx {
+      class gfx.SpriteSheet {
+          - sheet : BufferedImage
+          + SpriteSheet()
+          + crop()
+      }
     }
   }
   

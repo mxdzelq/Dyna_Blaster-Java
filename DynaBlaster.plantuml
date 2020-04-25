@@ -2,224 +2,304 @@
 
 title __DYNABLASTER's Class Diagram__\n
 
-  namespace DynaBlaster {
-    class DynaBlaster.Display {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Display {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Game {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Game {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.GameState {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.GameState {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Handler {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Handler {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.KeyManager {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.KeyManager {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Launcher {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Map {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Map {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.MenuState {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.MenuState {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.MouseManager {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.MouseManager {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Scores {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    abstract class DynaBlaster.State {
+  namespace  {
+    namespace ynaBlaster {
+      abstract class DynaBlaster.State {
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.config {
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.config {
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireDown {
+  namespace  {
+    namespace ire {
+      class Fire.FireDown {
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireLeft {
+  namespace  {
+    namespace ire {
+      class Fire.FireLeft {
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireRight {
+  namespace  {
+    namespace ire {
+      class Fire.FireRight {
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireUp {
+  namespace  {
+    namespace ire {
+      class Fire.FireUp {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.BrickWithNextLevelDoors {
+  namespace  {
+    class Launcher {
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.BrickWithSpeedUp {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.BrickWithNextLevelDoors {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.FireBoost {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.BrickWithSpeedUp {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.NextLevelEntity {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.FireBoost {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    abstract class SpecialEntities.SpecialEntity {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.NextLevelEntity {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.SpecialEntityManager {
+  namespace  {
+    namespace pecialEntities {
+      abstract class SpecialEntities.SpecialEntity {
+      }
     }
   }
   
 
-  namespace SpecialEntities {
-    class SpecialEntities.SpeedUpBoost {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.SpecialEntityManager {
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Bomb {
+  namespace  {
+    namespace pecialEntities {
+      class SpecialEntities.SpeedUpBoost {
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Brick {
+  namespace  {
+    namespace ntities {
+      class entities.Bomb {
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.Creature {
+  namespace  {
+    namespace ntities {
+      class entities.Brick {
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Enemy {
+  namespace  {
+    namespace ntities {
+      abstract class entities.Creature {
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.Entity {
+  namespace  {
+    namespace ntities {
+      class entities.Enemy {
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.EntityManager {
+  namespace  {
+    namespace ntities {
+      abstract class entities.Entity {
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Player {
+  namespace  {
+    namespace ntities {
+      class entities.EntityManager {
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.StaticEntity {
+  namespace  {
+    namespace ntities {
+      class entities.Player {
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.Animation {
+  namespace  {
+    namespace ntities {
+      abstract class entities.StaticEntity {
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.Assets {
+  namespace  {
+    namespace fx {
+      class gfx.Animation {
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.ImageLoader {
+  namespace  {
+    namespace fx {
+      class gfx.Assets {
+      }
     }
   }
   
 
-  namespace gfx {
-    class gfx.SpriteSheet {
+  namespace  {
+    namespace fx {
+      class gfx.ImageLoader {
+      }
     }
   }
   
 
-  namespace tiles {
-    class tiles.GrassTile {
+  namespace  {
+    namespace fx {
+      class gfx.SpriteSheet {
+      }
     }
   }
   
 
-  namespace tiles {
-    class tiles.Tile {
+  namespace  {
+    namespace iles {
+      class tiles.GrassTile {
+      }
     }
   }
   
 
-  namespace tiles {
-    class tiles.WallTile {
+  namespace  {
+    namespace iles {
+      class tiles.Tile {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace iles {
+      class tiles.WallTile {
+      }
     }
   }
   
@@ -268,6 +348,7 @@ title __DYNABLASTER's Class Diagram__\n
   entities.Creature -up-|> entities.Entity
   entities.Enemy -up-|> entities.Creature
   entities.Enemy o-- entities.Player : player
+  entities.Enemy o-- gfx.Animation : enemyAnim_
   entities.Entity o-- DynaBlaster.Handler : handler
   entities.EntityManager o-- entities.Enemy : enemy
   entities.EntityManager o-- DynaBlaster.Handler : handler

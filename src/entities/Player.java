@@ -269,7 +269,7 @@ public class Player extends Creature {
     }
 
     /**
-     * Aktualizacja pozostałęgo czasu gry
+     * Aktualizacja pozostałego czasu gry
      */
 
     private void timerUpdate(){

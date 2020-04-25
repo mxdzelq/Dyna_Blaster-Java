@@ -2,166 +2,192 @@
 
 title __ENTITIES's Class Diagram__\n
 
-  namespace entities {
-    class entities.Bomb {
-        {static} - bombed : boolean
-        {static} - fireDownPlaced : boolean
-        {static} - fireLeftPlaced : boolean
-        {static} - fireRightPlaced : boolean
-        {static} - fireUpPlaced : boolean
-        - lastTime : long
-        - timeToBoom : long
-        - timer : long
-        + Bomb()
-        + die()
-        + getTimer()
-        {static} + isBombed()
-        + render()
-        + setBombed()
-        + timerUpdate()
-        + update()
-        - getCurrentAnimationFrame()
+  namespace  {
+    namespace ntities {
+      class entities.Bomb {
+          {static} - bombed : boolean
+          {static} - fireDownPlaced : boolean
+          {static} - fireLeftPlaced : boolean
+          {static} - fireRightPlaced : boolean
+          {static} - fireUpPlaced : boolean
+          - lastTime : long
+          - timeToBoom : long
+          - timer : long
+          + Bomb()
+          + die()
+          + getTimer()
+          {static} + isBombed()
+          + render()
+          + setBombed()
+          + timerUpdate()
+          + update()
+          - getCurrentAnimationFrame()
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Brick {
-        + Brick()
-        + die()
-        + render()
-        + update()
+  namespace  {
+    namespace ntities {
+      class entities.Brick {
+          + Brick()
+          + die()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.Creature {
-        {static} + DEFAULT_CREATURE_HEIGHT : int
-        {static} + DEFAULT_CREATURE_WIDTH : int
-        {static} + DEFAULT_SPEED : float
-        # speed : float
-        + Creature()
-        + die()
-        + getHealth()
-        + getSpeed()
-        + move()
-        + moveX()
-        + moveY()
-        + setHealth()
-        + setSpeed()
-        # collisionWithTile()
+  namespace  {
+    namespace ntities {
+      abstract class entities.Creature {
+          {static} + DEFAULT_CREATURE_HEIGHT : int
+          {static} + DEFAULT_CREATURE_WIDTH : int
+          {static} + DEFAULT_SPEED : float
+          # speed : float
+          + Creature()
+          + die()
+          + getHealth()
+          + getSpeed()
+          + move()
+          + moveX()
+          + moveY()
+          + setHealth()
+          + setSpeed()
+          # collisionWithTile()
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Enemy {
-        {static} + DIR_DOWN : int
-        {static} + DIR_LEFT : int
-        {static} + DIR_RIGHT : int
-        {static} + DIR_UP : int
-        {static} + currentDirection : int
-        + Enemy()
-        + checkCollisionWithPlayer()
-        + die()
-        + move()
-        + moveX()
-        + moveY()
-        + render()
-        + update()
-        # collisionWithTile()
-        - changeDirection()
+  namespace  {
+    namespace ntities {
+      class entities.Enemy {
+          {static} + DIR_DOWN : int
+          {static} + DIR_LEFT : int
+          {static} + DIR_RIGHT : int
+          {static} + DIR_UP : int
+          {static} + currentDirection : int
+          + Enemy()
+          + checkCollisionWithPlayer()
+          + die()
+          + move()
+          + moveX()
+          + moveY()
+          + render()
+          + update()
+          # collisionWithTile()
+          - changeDirection()
+          - getCurrentAnimationFrame()
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.Entity {
-        {static} + DEFAULT_HEALTH : int
-        # active : boolean
-        # bounds : Rectangle
-        # health : int
-        # height : int
-        # width : int
-        # x : float
-        # y : float
-        + Entity()
-        + checkEntityCollision()
-        {abstract} + die()
-        + getCollisionBounds()
-        + getHealth()
-        + getHeight()
-        + getWidth()
-        + getX()
-        + getY()
-        + hurt()
-        + isActive()
-        {abstract} + render()
-        + setActive()
-        + setHealth()
-        + setHeight()
-        + setWidth()
-        + setX()
-        + setY()
-        {abstract} + update()
+  namespace  {
+    namespace ntities {
+      abstract class entities.Entity {
+          {static} + DEFAULT_HEALTH : int
+          # active : boolean
+          # bounds : Rectangle
+          # health : int
+          # height : int
+          # width : int
+          # x : float
+          # y : float
+          + Entity()
+          + checkEntityCollision()
+          {abstract} + die()
+          + getCollisionBounds()
+          + getHealth()
+          + getHeight()
+          + getWidth()
+          + getX()
+          + getY()
+          + hurt()
+          + isActive()
+          {abstract} + render()
+          + setActive()
+          + setHealth()
+          + setHeight()
+          + setWidth()
+          + setX()
+          + setY()
+          {abstract} + update()
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.EntityManager {
-        - entities : ArrayList<Entity>
-        {static} - player : Player
-        + EntityManager()
-        + addEntity()
-        + clearEntities()
-        + getEnemy()
-        + getEntities()
-        + getHandler()
-        {static} + getPlayer()
-        + render()
-        + setEnemy()
-        + setEntities()
-        + setHandler()
-        + setPlayer()
-        + update()
+  namespace  {
+    namespace ntities {
+      class entities.EntityManager {
+          - entities : ArrayList<Entity>
+          {static} - player : Player
+          + EntityManager()
+          + addEntity()
+          + clearEntities()
+          + getEnemy()
+          + getEntities()
+          + getHandler()
+          {static} + getPlayer()
+          + render()
+          + setEnemy()
+          + setEntities()
+          + setHandler()
+          + setPlayer()
+          + update()
+      }
     }
   }
   
 
-  namespace entities {
-    class entities.Player {
-        # xMove : float
-        # yMove : float
-        ~ f : JFrame
-        - canSetBomb : boolean
-        {static} - name : String
-        {static} - score : int
-        + Player()
-        + checkHealth()
-        + die()
-        {static} + getName()
-        {static} + getScore()
-        + hurt()
-        + move()
-        + moveX()
-        + moveY()
-        + render()
-        + setBomb()
-        + setCanSetBomb()
-        {static} + setName()
-        {static} + setScore()
-        + update()
-        - getCurrentAnimationFrame()
-        - getInput()
+  namespace  {
+    namespace ntities {
+      class entities.Player {
+          # xMove : float
+          # yMove : float
+          ~ f : JFrame
+          - canSetBomb : boolean
+          {static} - lastTime : int
+          {static} - name : String
+          {static} - score : int
+          {static} - timeLeft : int
+          + Player()
+          + checkHealth()
+          + die()
+          {static} + getName()
+          {static} + getScore()
+          {static} + getTimeLeft()
+          + getxMove()
+          + getyMove()
+          + hurt()
+          + move()
+          + moveX()
+          + moveY()
+          + render()
+          + setBomb()
+          + setCanSetBomb()
+          {static} + setName()
+          {static} + setScore()
+          {static} + setTimeLeft()
+          + setxMove()
+          + setyMove()
+          + update()
+          - getCurrentAnimationFrame()
+          - getInput()
+          - timerUpdate()
+      }
     }
   }
   
 
-  namespace entities {
-    abstract class entities.StaticEntity {
-        + StaticEntity()
+  namespace  {
+    namespace ntities {
+      abstract class entities.StaticEntity {
+          + StaticEntity()
+      }
     }
   }
   
@@ -172,6 +198,7 @@ title __ENTITIES's Class Diagram__\n
   entities.Creature -up-|> entities.Entity
   entities.Enemy -up-|> entities.Creature
   entities.Enemy o-- entities.Player : player
+  entities.Enemy o-- gfx.Animation : enemyAnim_
   entities.Entity o-- DynaBlaster.Handler : handler
   entities.EntityManager o-- entities.Enemy : enemy
   entities.EntityManager o-- DynaBlaster.Handler : handler

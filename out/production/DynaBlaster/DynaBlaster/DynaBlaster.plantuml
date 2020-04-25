@@ -2,197 +2,231 @@
 
 title __DYNABLASTER's Class Diagram__\n
 
-  namespace DynaBlaster {
-    class DynaBlaster.Display {
-        - canvas : Canvas
-        - frame : JFrame
-        - height : int
-        - title : String
-        - width : int
-        + Display()
-        + getCanvas()
-        + getFrame()
-        - createDisplay()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Display {
+          - canvas : Canvas
+          - frame : JFrame
+          - height : int
+          - title : String
+          - width : int
+          + Display()
+          + getCanvas()
+          + getFrame()
+          - createDisplay()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Game {
-        + height : int
-        {static} + paused : boolean
-        + title : String
-        + width : int
-        - bs : BufferStrategy
-        - g : Graphics
-        - running : boolean
-        - thread : Thread
-        + Game()
-        + getHeight()
-        + getKeyManager()
-        + getMouseManager()
-        + getThread()
-        + getWidth()
-        + init()
-        + run()
-        + setHeight()
-        + setWidth()
-        + start()
-        + stop()
-        - render()
-        - update()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Game {
+          + height : int
+          {static} + paused : boolean
+          + title : String
+          + width : int
+          - bs : BufferStrategy
+          - g : Graphics
+          - running : boolean
+          - thread : Thread
+          + Game()
+          + getHeight()
+          + getKeyManager()
+          + getMouseManager()
+          + getThread()
+          + getWidth()
+          + init()
+          + run()
+          + setHeight()
+          + setWidth()
+          + start()
+          + stop()
+          - render()
+          - update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.GameState {
-        + GameState()
-        + render()
-        + update()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.GameState {
+          + GameState()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Handler {
-        + Handler()
-        + getGame()
-        + getHeight()
-        + getKeyManager()
-        + getMap()
-        + getMouseManager()
-        + getWidth()
-        + setGame()
-        + setMap()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Handler {
+          + Handler()
+          + getGame()
+          + getHeight()
+          + getKeyManager()
+          + getMap()
+          + getMouseManager()
+          + getWidth()
+          + setGame()
+          + setMap()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.KeyManager {
-        + bombPlace : boolean
-        + down : boolean
-        + left : boolean
-        + pause : boolean
-        + right : boolean
-        + unpause : boolean
-        + up : boolean
-        - keys : boolean[]
-        + KeyManager()
-        + keyPressed()
-        + keyReleased()
-        + keyTyped()
-        + update()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.KeyManager {
+          + bombPlace : boolean
+          + down : boolean
+          + left : boolean
+          + pause : boolean
+          + right : boolean
+          + unpause : boolean
+          + up : boolean
+          - keys : boolean[]
+          + KeyManager()
+          + keyPressed()
+          + keyReleased()
+          + keyTyped()
+          + update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Launcher {
-        {static} + main()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Map {
+          - height : int
+          - id : int
+          - level : String
+          - spawnX : int
+          - spawnY : int
+          - tiles : int[][]
+          - width : int
+          + Map()
+          + getEntityManager()
+          + getId()
+          + getTile()
+          + loadEntities()
+          + loadMap()
+          + render()
+          + setId()
+          + update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.Map {
-        - height : int
-        - id : int
-        - level : String
-        - spawnX : int
-        - spawnY : int
-        - tiles : int[][]
-        - width : int
-        + Map()
-        + getEntityManager()
-        + getId()
-        + getTile()
-        + loadEntities()
-        + loadMap()
-        + render()
-        + setId()
-        + update()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.MenuState {
+          + MenuState()
+          + render()
+          + update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.MenuState {
-        + MenuState()
-        + render()
-        + update()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.MouseManager {
+          - leftPressed : boolean
+          - mouseX : int
+          - mouseY : int
+          - rightPressed : boolean
+          + getMouseX()
+          + getMouseY()
+          + isLeftPressed()
+          + isRightPressed()
+          + mouseClicked()
+          + mouseDragged()
+          + mouseEntered()
+          + mouseExited()
+          + mouseMoved()
+          + mouseOver()
+          + mousePressed()
+          + mouseReleased()
+          + unpress()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.MouseManager {
-        - leftPressed : boolean
-        - mouseX : int
-        - mouseY : int
-        - rightPressed : boolean
-        + getMouseX()
-        + getMouseY()
-        + isLeftPressed()
-        + isRightPressed()
-        + mouseClicked()
-        + mouseDragged()
-        + mouseEntered()
-        + mouseExited()
-        + mouseMoved()
-        + mouseOver()
-        + mousePressed()
-        + mouseReleased()
-        + unpress()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.Scores {
+          {static} - highScores : String[]
+          {static} - scoresArray : ArrayList<String>
+          {static} - scoresComp : Comparator<String>
+          {static} + choose5Scores()
+          {static} + getHighScores()
+          {static} + getScoresArray()
+          + update()
+          {static} + writeScore()
+          ~ Scores()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    abstract class DynaBlaster.State {
-        {static} - currentState : State
-        + State()
-        {static} + getState()
-        {abstract} + render()
-        {static} + setState()
-        {abstract} + update()
+  namespace  {
+    namespace ynaBlaster {
+      abstract class DynaBlaster.State {
+          {static} - currentState : State
+          + State()
+          {static} + getState()
+          {abstract} + render()
+          {static} + setState()
+          {abstract} + update()
+      }
     }
   }
   
 
-  namespace DynaBlaster {
-    class DynaBlaster.config {
-        {static} + defaultPlayerSpeed : float
-        {static} + fireXheight : int
-        {static} + fireXwidth : int
-        {static} + fireYheight : int
-        {static} + fireYwidth : int
-        {static} + fps : int
-        {static} + frameTitle : String
-        {static} + gameTime : int
-        {static} + gameWindowHeight : int
-        {static} + gameWindowWidth : int
-        {static} + level0 : String
-        {static} + level1 : String
-        {static} + level2 : String
-        {static} + level3 : String
-        {static} + levelHeight : int
-        {static} + levelWidth : int
-        {static} + playerSpawnX : int
-        {static} + playerSpawnY : int
-        {static} + pointsForEnemy : int
-        {static} + pointsForLife : int
-        {static} + pointsForPassingLevel : int
-        {static} + rulesText : String
-        {static} + tileHeight : int
-        {static} + tileWidth : int
-        {static} + timeToBoom : int
-        {static} + xmlConfig : String
-        {static} + xmlLevels : String
-        {static} + parseConfig()
-        {static} + parseLevels()
-        - config()
+  namespace  {
+    namespace ynaBlaster {
+      class DynaBlaster.config {
+          {static} + defaultPlayerSpeed : float
+          {static} + enemyHealth : int
+          {static} + enemySpeed : int
+          {static} + fireTimeOfLife : int
+          {static} + fireXheight : int
+          {static} + fireXwidth : int
+          {static} + fireYheight : int
+          {static} + fireYwidth : int
+          {static} + fps : int
+          {static} + frameTitle : String
+          {static} + gameTime : int
+          {static} + gameWindowHeight : int
+          {static} + gameWindowWidth : int
+          {static} + level0 : String
+          {static} + level1 : String
+          {static} + level2 : String
+          {static} + level3 : String
+          {static} + levelHeight : int
+          {static} + levelWidth : int
+          {static} + playerHealth : int
+          {static} + playerSpawnX : int
+          {static} + playerSpawnY : int
+          {static} + pointsForEnemy : int
+          {static} + pointsForLife : int
+          {static} + pointsForPassingLevel : int
+          {static} + rulesText : String
+          {static} + tileHeight : int
+          {static} + tileWidth : int
+          {static} + timeToBoom : int
+          {static} + xmlConfig : String
+          {static} + xmlLevels : String
+          {static} + parseConfig()
+          {static} + parseLevels()
+          - config()
+      }
     }
   }
   

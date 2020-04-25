@@ -2,74 +2,82 @@
 
 title __FIRE's Class Diagram__\n
 
-  namespace Fire {
-    class Fire.FireDown {
-        - hurtBounds : Rectangle
-        - lastTime : long
-        - timeOfLife : long
-        - timer : long
-        + FireDown()
-        + checkFireCollision()
-        + die()
-        + getHurtCollisionBounds()
-        + render()
-        + update()
-        - getCurrentAnimationFrameOfFireDown()
-        - timerUpdate()
+  namespace  {
+    namespace ire {
+      class Fire.FireDown {
+          - hurtBounds : Rectangle
+          - lastTime : long
+          - timeOfLife : long
+          - timer : long
+          + FireDown()
+          + checkFireCollision()
+          + die()
+          + getHurtCollisionBounds()
+          + render()
+          + update()
+          - getCurrentAnimationFrameOfFireDown()
+          - timerUpdate()
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireLeft {
-        - hurtBounds : Rectangle
-        - lastTime : long
-        - timeOfLife : long
-        - timer : long
-        + FireLeft()
-        + checkFireCollision()
-        + die()
-        + getHurtCollisionBounds()
-        + render()
-        + update()
-        - getCurrentAnimationFrameOfFireLeft()
-        - timerUpdate()
+  namespace  {
+    namespace ire {
+      class Fire.FireLeft {
+          - hurtBounds : Rectangle
+          - lastTime : long
+          - timeOfLife : long
+          - timer : long
+          + FireLeft()
+          + checkFireCollision()
+          + die()
+          + getHurtCollisionBounds()
+          + render()
+          + update()
+          - getCurrentAnimationFrameOfFireLeft()
+          - timerUpdate()
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireRight {
-        - hurtBounds : Rectangle
-        - lastTime : long
-        - timeOfLife : long
-        - timer : long
-        + FireRight()
-        + checkFireCollision()
-        + die()
-        + getHurtCollisionBounds()
-        + render()
-        + update()
-        - getCurrentAnimationFrameOfFireRight()
-        - timerUpdate()
+  namespace  {
+    namespace ire {
+      class Fire.FireRight {
+          - hurtBounds : Rectangle
+          - lastTime : long
+          - timeOfLife : long
+          - timer : long
+          + FireRight()
+          + checkFireCollision()
+          + die()
+          + getHurtCollisionBounds()
+          + render()
+          + update()
+          - getCurrentAnimationFrameOfFireRight()
+          - timerUpdate()
+      }
     }
   }
   
 
-  namespace Fire {
-    class Fire.FireUp {
-        - hurtBounds : Rectangle
-        - lastTime : long
-        - timeOfLife : long
-        - timer : long
-        + FireUp()
-        + checkFireCollision()
-        + die()
-        + getHurtCollisionBounds()
-        + render()
-        + update()
-        - getCurrentAnimationFrameOfFireUp()
-        - timerUpdate()
+  namespace  {
+    namespace ire {
+      class Fire.FireUp {
+          - hurtBounds : Rectangle
+          - lastTime : long
+          - timeOfLife : long
+          - timer : long
+          + FireUp()
+          + checkFireCollision()
+          + die()
+          + getHurtCollisionBounds()
+          + render()
+          + update()
+          - getCurrentAnimationFrameOfFireUp()
+          - timerUpdate()
+      }
     }
   }
   

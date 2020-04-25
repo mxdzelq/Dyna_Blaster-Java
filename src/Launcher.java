@@ -1,5 +1,5 @@
-package DynaBlaster;
-
+import DynaBlaster.Game;
+import DynaBlaster.config;
 
 /**
  * Klasa uruchamiająca program
