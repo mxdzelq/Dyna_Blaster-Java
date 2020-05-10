@@ -64,6 +64,7 @@ public class NextLevelEntity extends SpecialEntity {
                 EntityManager.getPlayer().setX(config.playerSpawnX);
                 EntityManager.getPlayer().setY(config.playerSpawnY);
                 player2.setScore(player2.getScore()+config.pointsForPassingLevel);
+                player2.setCanSetBomb(true);
                 handler.getMap().setId(2);
                 handler.getMap().loadEntities(config.level2);
                 handler.getMap().loadMap(config.level2);
@@ -77,6 +78,7 @@ public class NextLevelEntity extends SpecialEntity {
                 EntityManager.getPlayer().setX(config.playerSpawnX);
                 EntityManager.getPlayer().setY(config.playerSpawnY);
                 player3.setScore(player3.getScore()+config.pointsForPassingLevel);
+                player3.setCanSetBomb(true);
                 handler.getMap().setId(3);
                 handler.getMap().loadEntities(config.level3);
                 handler.getMap().loadMap(config.level3);

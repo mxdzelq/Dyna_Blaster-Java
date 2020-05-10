@@ -6,6 +6,7 @@ import entities.Entity;
 import entities.StaticEntity;
 import gfx.Animation;
 import gfx.Assets;
+import tiles.Tile;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -97,6 +98,7 @@ public class FireLeft extends StaticEntity {
     public void update() {
         fireLeft.update();
         timerUpdate();
+        checkTileCollision();
         checkFireCollision(0f,0f);
 
     }
@@ -111,6 +113,22 @@ public class FireLeft extends StaticEntity {
                 continue;
             if(e.getCollisionBounds(0f,0f).intersects(getHurtCollisionBounds(xOffset, yOffset)))
                 e.hurt();
+        }
+    }
+
+    /**
+     * Sprawdzenie kolizji ze ścianą
+     */
+
+    private void checkTileCollision(){
+        for(int i=0;i<width;i++) {
+            int tx = (int) (x+i) / Tile.DEFAULT_TILEWIDTH;
+            if (collisionWithTile(tx, (int) (y+7) / Tile.DEFAULT_TILEHEIGHT) || (collisionWithTile(tx, (int) (y+ 22) / Tile.DEFAULT_TILEHEIGHT))) {
+            x=x+i;
+            width=width-i;
+            hurtBounds.x=hurtBounds.x+i;
+            hurtBounds.width=hurtBounds.width-i;
+            }
         }
     }
 
@@ -144,6 +162,8 @@ public class FireLeft extends StaticEntity {
         return new Rectangle((int)(x+hurtBounds.x+xOffset),(int)(y+hurtBounds.y+yOffset),hurtBounds.width,hurtBounds.height);
     }
 
-
+    protected boolean collisionWithTile(int x,int y){
+        return handler.getMap().getTile(x,y).isSolid();
+    }
 
 }
