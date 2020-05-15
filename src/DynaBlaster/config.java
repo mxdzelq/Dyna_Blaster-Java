@@ -149,6 +149,12 @@ public final class config {
     public static int timeToBoom;
 
     /**
+     * Wartość wzmocnienia ognia
+     */
+
+    public static int fireBoostValue;
+
+    /**
      * Punkty za zniszczenie wroga
      */
 
@@ -221,7 +227,7 @@ public final class config {
             pointsForLife=Integer.parseInt(doc.getElementsByTagName("pointsForLife").item(0).getTextContent());
             gameTime=Integer.parseInt(doc.getElementsByTagName("gameTime").item(0).getTextContent());
             fireTimeOfLife=Integer.parseInt(doc.getElementsByTagName("fireTimeOfLife").item(0).getTextContent());
-
+            fireBoostValue=Integer.parseInt(doc.getElementsByTagName("fireBoostValue").item(0).getTextContent());
 
 
         } catch (ParserConfigurationException e) {

@@ -79,4 +79,7 @@ public class Display {
         return frame;
     }
 
+    public int getWidth() {
+        return width;
+    }
 }

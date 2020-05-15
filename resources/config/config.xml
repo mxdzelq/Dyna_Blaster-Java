@@ -18,6 +18,7 @@
 <fireXheight>32</fireXheight>
 <fireYwidth>32</fireYwidth>
 <fireYheight>64</fireYheight>
+<fireBoostValue>32</fireBoostValue>
 <timeToBoom>2500</timeToBoom>
 <fireTimeOfLife>1429</fireTimeOfLife>
 

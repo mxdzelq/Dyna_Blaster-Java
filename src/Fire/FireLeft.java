@@ -3,6 +3,7 @@ package Fire;
 import DynaBlaster.Handler;
 import DynaBlaster.config;
 import entities.Entity;
+import entities.EntityManager;
 import entities.StaticEntity;
 import gfx.Animation;
 import gfx.Assets;
@@ -51,17 +52,17 @@ public class FireLeft extends StaticEntity {
      * @param y       położenie w płaszczyźnie y
      */
     public FireLeft(Handler handler, float x, float y) {
-        super(handler, x, y, config.fireXwidth, config.fireXheight);
+        super(handler, x, y, config.fireXwidth+ EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue, config.fireXheight);
 
             bounds.x=0;
             bounds.y=0;
             bounds.width=0;
             bounds.height=0;
 
-            hurtBounds=new Rectangle(0,10,64,12);
+            hurtBounds=new Rectangle(0,10,64+EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue,12);
             hurtBounds.x=0;
             hurtBounds.y=10;
-            hurtBounds.width=64;
+            hurtBounds.width=64+EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue;
             hurtBounds.height=12;
 
 

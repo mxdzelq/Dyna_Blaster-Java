@@ -1,5 +1,6 @@
 package DynaBlaster;
 
+import SpecialEntities.BrickWithFireBoost;
 import SpecialEntities.BrickWithNextLevelDoors;
 import SpecialEntities.BrickWithSpeedUp;
 import SpecialEntities.SpecialEntityManager;
@@ -203,6 +204,10 @@ for(int y=0;y<height;y++){
                         x += 32;
                         break;
 
+                    case '6':
+                        entityManager.addEntity(new BrickWithFireBoost(handler, x, y));
+                        x += 32;
+                        break;
 
                     case '7':
                         entityManager.addEntity(new BrickWithSpeedUp(handler, x, y));

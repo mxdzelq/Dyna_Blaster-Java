@@ -61,6 +61,12 @@ public class Player extends Creature {
 
     private static int timeLeft, lastTime;
 
+    /**
+     * Poziom wzmocnienia ognia
+     */
+
+    private static int fireBoostLevel;
+
     JFrame f;
 
     /**
@@ -80,6 +86,7 @@ public class Player extends Creature {
 
         health=config.playerHealth;
         score=0;
+        fireBoostLevel=0;
 
 
         speed= config.defaultPlayerSpeed;
@@ -330,5 +337,13 @@ public class Player extends Creature {
 
     public static void setTimeLeft(int timeLeft) {
         Player.timeLeft = timeLeft;
+    }
+
+    public static int getFireBoostLevel() {
+        return fireBoostLevel;
+    }
+
+    public static void setFireBoostLevel(int fireBoostLevel) {
+        Player.fireBoostLevel = fireBoostLevel;
     }
 }

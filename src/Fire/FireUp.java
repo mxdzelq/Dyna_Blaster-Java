@@ -3,6 +3,7 @@ package Fire;
 import DynaBlaster.Handler;
 import DynaBlaster.config;
 import entities.Entity;
+import entities.EntityManager;
 import entities.StaticEntity;
 import gfx.Animation;
 import gfx.Assets;
@@ -49,7 +50,7 @@ public class FireUp extends StaticEntity {
      * @param y       położenie w płaszczyźnie y
      */
     public FireUp(Handler handler, float x, float y) {
-        super(handler, x, y, config.fireYwidth, config.fireYheight);
+        super(handler, x, y, config.fireYwidth, config.fireYheight+ EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue);
 
         bounds.x=0;
         bounds.y=0;
@@ -57,11 +58,11 @@ public class FireUp extends StaticEntity {
         bounds.height=0;
 
 
-        hurtBounds=new Rectangle(10,0,12,64);
+        hurtBounds=new Rectangle(10,0,12,64+EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue);
         hurtBounds.x=10;
         hurtBounds.y=0;
         hurtBounds.width=12;
-        hurtBounds.height=64;
+        hurtBounds.height=64+EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue;
 
         fireUp=new Animation(357, Assets.fireUp);
         timer=0;

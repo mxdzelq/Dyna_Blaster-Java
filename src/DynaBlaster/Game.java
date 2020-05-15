@@ -131,15 +131,16 @@ public class Game implements Runnable {
 
     private void update(){
         keyManager.update();
+//System.out.println(display.getFrame().getWidth());
 
         if(!paused) {
             keyManager.update();
             if (State.getState() != null)
                 State.getState().update();
         }
-        if(paused)
-        keyManager.update();
-
+        if(paused) {
+            keyManager.update();
+        }
     }
 
     /**
@@ -193,7 +194,7 @@ public class Game implements Runnable {
     }
 
     /**
-     * Uruchomienie wątku
+     * Start wątku
      */
 
     public synchronized void start(){
@@ -245,5 +246,9 @@ public class Game implements Runnable {
 
     public Thread getThread() {
         return thread;
+    }
+
+    public Display getDisplay() {
+        return display;
     }
 }

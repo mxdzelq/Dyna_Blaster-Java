@@ -125,13 +125,13 @@ public class Bomb extends StaticEntity{
             }
             if (timer >= 1071 && fireLeftPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
-                FireLeft fireLeft = new FireLeft(handler, x - 64, y + 0);
+                FireLeft fireLeft = new FireLeft(handler, x - 64 - (EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue), y + 0);
                 entities.add(fireLeft);
                 fireLeftPlaced = true;
             }
             if (timer >= 1071 && fireUpPlaced == false) {
                 ArrayList<Entity> entities = handler.getMap().getEntityManager().getEntities();
-                FireUp fireUp = new FireUp(handler, x, y - 64);
+                FireUp fireUp = new FireUp(handler, x, y - 64 - (EntityManager.getPlayer().getFireBoostLevel()*config.fireBoostValue));
                 entities.add(fireUp);
                 fireUpPlaced = true;
             }
