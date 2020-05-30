@@ -8,41 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6997ce71-3155-4cf3-bfff-82b7775e39ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/KeyManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/MenuState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/DynaBlaster/config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireDown.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireLeft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireRight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/Fire/FireUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/FireBoost.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/FireBoost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/NextLevelEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/SpecialEntities/NextLevelEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/config/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/config/levels.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/config/levels.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Bomb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DynaBlaster/gfx/Assets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/config/levels.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config/levels.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/KeyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/MenuState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynaBlaster/config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynaBlaster/config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fire/FireDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fire/FireLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fire/FireRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireRight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fire/FireUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fire/FireUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialEntities/FireBoost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialEntities/FireBoost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpecialEntities/NextLevelEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpecialEntities/NextLevelEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Bomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Assets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,22 +134,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="54" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1536.824@0.0.1536.824" timestamp="1587825327798" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1589559420650">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1590831858014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589559420650" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1589559420650">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590831858014" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1590831858014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589559420650" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1589559420650">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590831858014" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1590831858013">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589559420650" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1589559420650">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590831858013" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1590831858014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589559420650" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590831858014" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1585316871725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
