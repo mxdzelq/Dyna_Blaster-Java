@@ -30,7 +30,7 @@ public class MenuState extends State{
          * Rozpoczęcie nowej gry
          */
 
-        if(handler.getMouseManager().mouseOver(mx,my,250,20,150,50) && (handler.getMouseManager().isLeftPressed())) {
+        if(handler.getMouseManager().mouseOver(mx,my, (int) (250*handler.getGame().getSx()), (int) (20*handler.getGame().getSy()), (int) (150*handler.getGame().getSx()), (int) (50*handler.getGame().getSy())) && (handler.getMouseManager().isLeftPressed())) {
             State.setState(handler.getGame().gameState);
             if(handler.getMap().getId()==0) {
                 new Map(handler,0);
@@ -53,7 +53,7 @@ public class MenuState extends State{
          * Wyświetlenie zasad
          */
 
-        if(handler.getMouseManager().mouseOver(mx,my,250,90,150,50) && (handler.getMouseManager().isLeftPressed())) {
+        if(handler.getMouseManager().mouseOver(mx,my, (int) (250*handler.getGame().getSx()), (int) (90*handler.getGame().getSy()), (int) (150*handler.getGame().getSx()), (int) (50*handler.getGame().getSy())) && (handler.getMouseManager().isLeftPressed())) {
             JOptionPane.showMessageDialog(null, config.rulesText);
             handler.getMouseManager().unpress();
         }
@@ -62,7 +62,7 @@ public class MenuState extends State{
          * Wyświetlenie najwyższych wyników
          */
 
-        if(handler.getMouseManager().mouseOver(mx,my,250,160,150,50) && (handler.getMouseManager().isLeftPressed())) {
+        if(handler.getMouseManager().mouseOver(mx,my, (int) (250*handler.getGame().getSx()), (int) (160*handler.getGame().getSy()), (int) (150*handler.getGame().getSx()), (int) (50*handler.getGame().getSy())) && (handler.getMouseManager().isLeftPressed())) {
             Scores scores = new Scores();
             scores.update();
             JOptionPane.showMessageDialog(null, scores.getHighScores());
@@ -74,7 +74,7 @@ public class MenuState extends State{
          * Wyjście z gry
          */
 
-        if(handler.getMouseManager().mouseOver(mx,my,250,230,150,50) && (handler.getMouseManager().isLeftPressed())){
+        if(handler.getMouseManager().mouseOver(mx,my, (int) (250*handler.getGame().getSx()), (int) (230*handler.getGame().getSy()), (int) (150*handler.getGame().getSx()), (int) (50*handler.getGame().getSy())) && (handler.getMouseManager().isLeftPressed())){
             System.exit(0);
             handler.getMouseManager().unpress();
         }

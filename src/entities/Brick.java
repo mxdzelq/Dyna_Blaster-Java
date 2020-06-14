@@ -5,7 +5,6 @@ import gfx.Assets;
 import tiles.Tile;
 
 import java.awt.*;
-import java.util.ArrayList;
 
 /**
  * Klasa cegły (bloku możliwego do zniszczenia)
@@ -48,7 +47,5 @@ public class Brick extends StaticEntity {
     @Override
     public void render(Graphics g) {
     g.drawImage(Assets.brick,(int)(x),(int)(y),width,height,null);
-        //g.setColor(Color.red);
-        //g.fillRect((int)(x+bounds.x),(int)(y+bounds.y),bounds.width,bounds.height);
     }
 }

@@ -116,17 +116,18 @@ public class FireUp extends StaticEntity {
     }
 
     /**
-     * Sprawdzenie kolizji ze ścianą
+     * Obsługa kolizji ze ścianą
      */
 
     private void checkTileCollision(){
         for(int i=0;i<height;i++) {
             int ty = (int) (y+i) / Tile.DEFAULT_TILEHEIGHT;
-            if (collisionWithTile((int) (x+7) / Tile.DEFAULT_TILEWIDTH,ty) || (collisionWithTile((int) (x+ 22) / Tile.DEFAULT_TILEWIDTH,ty))) {
+            if (collisionWithTile((int) (x+8) / Tile.DEFAULT_TILEWIDTH,ty) || (collisionWithTile((int) (x+ 22) / Tile.DEFAULT_TILEWIDTH,ty))) {
                 y=y+i;
                 height = height-i;
-                hurtBounds.y=hurtBounds.y-i;
+                hurtBounds.y=hurtBounds.y+i;
                 hurtBounds.height=hurtBounds.height-i;
+
             }
         }
     }
@@ -138,6 +139,7 @@ public class FireUp extends StaticEntity {
 
     public void render(Graphics g) {
         g.drawImage(getCurrentAnimationFrameOfFireUp(),(int)(x),(int)(y),width,height,null);
+
     }
 
     /**
@@ -159,6 +161,13 @@ public class FireUp extends StaticEntity {
     public Rectangle getHurtCollisionBounds(float xOffset,float yOffset){
         return new Rectangle((int)(x+hurtBounds.x+xOffset),(int)(y+hurtBounds.y+yOffset),hurtBounds.width,hurtBounds.height);
     }
+
+    /**
+     * Zwrot czy wystąpiła kolizja ze ścianą
+     * @param x położenie ognia w płaszczyźnie x
+     * @param y położenie ognia w płaszczyźnie y
+     * @return czy kolizja występuje
+     */
 
     protected boolean collisionWithTile(int x,int y){
         return handler.getMap().getTile(x,y).isSolid();

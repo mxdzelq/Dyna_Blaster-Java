@@ -7,6 +7,10 @@ import tiles.Tile;
 import java.awt.*;
 import java.util.ArrayList;
 
+/**
+ * Klasa cegły z boosterem ognia
+ */
+
 public class BrickWithFireBoost extends StaticEntity {
 
 

@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"DynaBlaster"},{"l":"entities"},{"l":"Fire"},{"l":"gfx"},{"l":"SpecialEntities"},{"l":"tiles"}]

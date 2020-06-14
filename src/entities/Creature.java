@@ -1,6 +1,7 @@
 package entities;
 
 import DynaBlaster.Handler;
+import DynaBlaster.config;
 import tiles.Tile;
 
 /**
@@ -13,7 +14,7 @@ public abstract class Creature extends Entity{
      * Zmienne statyczne
      */
 
-    public static final float DEFAULT_SPEED = 3.0f;
+    public static final float DEFAULT_SPEED = config.defaultCreatureSpeed;
     public static final int DEFAULT_CREATURE_WIDTH=Tile.DEFAULT_TILEWIDTH;
     public static final int DEFAULT_CREATURE_HEIGHT=Tile.DEFAULT_TILEHEIGHT;
 

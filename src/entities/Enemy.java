@@ -191,8 +191,8 @@ public class Enemy extends Creature {
 
     public final boolean checkCollisionWithPlayer(float xOffset, float yOffset){
         if(getCollisionBounds(0f,0f).intersects(player.getCollisionBounds(xOffset,yOffset))){
-            player.setX(32);
-            player.setY(32);
+            player.setX(config.playerSpawnX);
+            player.setY(config.playerSpawnY);
             player.setHealth(player.getHealth()-1);
             return true;
         }return false;

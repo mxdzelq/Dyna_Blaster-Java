@@ -64,6 +64,7 @@ public final class config {
      * 1 - blok ściany
      * 2 - blok cegły
      * 3 - przeciwnik
+     * 6 - blok z boosterem pola rażenia ognia
      * 7 - blok z boosterem szybkości
      * 8 - blok z przejściem na koljeny poziom
      */
@@ -99,6 +100,12 @@ public final class config {
      */
 
     public static float defaultPlayerSpeed;
+
+    /**
+     * Podstawowa prędkość wroga
+     */
+
+    public static float defaultCreatureSpeed;
 
     /**
      * Szerokość oraz wysokość bloku
@@ -212,6 +219,7 @@ public final class config {
             rulesText=doc.getElementsByTagName("rulesText").item(0).getTextContent();
             fps=Integer.parseInt(doc.getElementsByTagName("defaultFps").item(0).getTextContent());
             defaultPlayerSpeed=Float.parseFloat(doc.getElementsByTagName("defaultPlayerSpeed").item(0).getTextContent());
+            defaultCreatureSpeed=Float.parseFloat(doc.getElementsByTagName("defaultCreatureSpeed").item(0).getTextContent());
             tileWidth=Integer.parseInt(doc.getElementsByTagName("tileWidth").item(0).getTextContent());
             tileHeight=Integer.parseInt(doc.getElementsByTagName("tileHeight").item(0).getTextContent());
             fireXwidth=Integer.parseInt(doc.getElementsByTagName("fireXwidth").item(0).getTextContent());

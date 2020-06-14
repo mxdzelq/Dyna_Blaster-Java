@@ -37,6 +37,12 @@ public class FireBoost extends SpecialEntity {
         g.drawImage(Assets.fireBoost,(int)(x),(int)(y),width,height,null);
     }
 
+    /**
+     * Sprawdzenie kolizji z graczem i zwiększenie pola rażenia jego bomb
+     * @param xOffset 0
+     * @param yOffset 0
+     * @return czy kolizja występuje
+     */
     public final boolean checkCollisionWithPlayer(float xOffset, float yOffset){
         if(getCollisionBounds(0f,0f).intersects(player.getCollisionBounds(xOffset,yOffset))){
             player.setFireBoostLevel(player.getFireBoostLevel()+1);

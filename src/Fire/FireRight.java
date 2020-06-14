@@ -113,13 +113,13 @@ public class FireRight extends StaticEntity {
     }
 
     /**
-     * Sprawdzenie kolizji ze ścianą
+     * Obsługa kolizji ze ścianą
      */
 
    private void checkTileCollision(){
         for(int i=0;i<width;i++) {
             int tx = (int) (x+i) / Tile.DEFAULT_TILEWIDTH;
-            if (collisionWithTile(tx, (int) (y+7) / Tile.DEFAULT_TILEHEIGHT) || (collisionWithTile(tx, (int) (y+ 22) / Tile.DEFAULT_TILEHEIGHT))) {
+            if (collisionWithTile(tx, (int) (y+8) / Tile.DEFAULT_TILEHEIGHT) || (collisionWithTile(tx, (int) (y+ 22) / Tile.DEFAULT_TILEHEIGHT))) {
                 width = 0+i;
                 hurtBounds.width=0+i;
             }
@@ -154,6 +154,13 @@ public class FireRight extends StaticEntity {
     public Rectangle getHurtCollisionBounds(float xOffset,float yOffset){
         return new Rectangle((int)(x+hurtBounds.x+xOffset),(int)(y+hurtBounds.y+yOffset),hurtBounds.width,hurtBounds.height);
     }
+
+    /**
+     * Zwrot czy wystąpiła kolizja ze ścianą
+     * @param x położenie ognia w płaszczyźnie x
+     * @param y położenie ognia w płaszczyźnie y
+     * @return czy kolizja występuje
+     */
 
     protected boolean collisionWithTile(int x,int y){
         return handler.getMap().getTile(x,y).isSolid();

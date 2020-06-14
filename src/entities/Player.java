@@ -67,6 +67,10 @@ public class Player extends Creature {
 
     private static int fireBoostLevel;
 
+    /**
+     * Ramka wyświetlająca się po śmierci gracza
+     */
+
     JFrame f;
 
     /**
@@ -178,7 +182,7 @@ public class Player extends Creature {
     }
 
     /**
-     * Sprawdzenie, czy gracz posiada jeszcze życia
+     * Sprawdzenie, czy gracz posiada jeszcze życia oraz obsługa śmierci
      */
 
     public void checkHealth(){

@@ -1,6 +1,7 @@
 package entities;
 
 import DynaBlaster.Handler;
+import DynaBlaster.config;
 
 import java.awt.*;
 
@@ -40,7 +41,15 @@ public abstract class Entity {
 
     protected int health;
 
-    public static final int DEFAULT_HEALTH = 1;
+    /**
+     * Domyślne życie jednostki
+     */
+
+    public static final int DEFAULT_HEALTH = config.enemyHealth;
+
+    /**
+     * Zmienna opisująca czy jednostka jest aktywna
+     */
 
     protected boolean active=true;
 
@@ -64,10 +73,14 @@ public abstract class Entity {
         bounds=new Rectangle(0,0,width,height);
     }
 
+    /**
+     * Metoda opisująca co się stanie po śmierci jednostki
+     */
+
     public abstract void die();
 
     /**
-     * Otrzymanie obrażeń przez jednostkę z obsługą zniszczenia jednostki
+     * Metoda określająca, co się stanie po otrzymaniu obrażeń przez jednostkę
      */
 
     public void hurt(){

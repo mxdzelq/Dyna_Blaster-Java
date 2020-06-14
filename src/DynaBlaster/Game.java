@@ -3,6 +3,9 @@ package DynaBlaster;
 import gfx.*;
 
 import java.awt.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferStrategy;
 
 /**
@@ -90,6 +93,12 @@ public class Game implements Runnable {
     private Handler handler;
 
     /**
+     * Zmienne używane do skalowania okna
+     */
+
+    private float sx=1,sy=1;
+
+    /**
      * Konstruktor gry
      * @param title tytuł okna
      * @param width szerokość okna
@@ -130,8 +139,22 @@ public class Game implements Runnable {
      */
 
     private void update(){
+        /**
+         * Reagowanie na zmianę rozmiaru okna
+         */
+
+        display.getFrame().addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                super.componentResized(e);
+                sx=(1f+(display.getFrame().getWidth()-config.gameWindowWidth)/(float) config.gameWindowWidth);
+                sy=(1f+(display.getFrame().getHeight()-config.gameWindowHeight)/(float)(config.gameWindowHeight));
+
+            }
+        });
+
         keyManager.update();
-//System.out.println(display.getFrame().getWidth());
+
 
         if(!paused) {
             keyManager.update();
@@ -154,17 +177,27 @@ public class Game implements Runnable {
             return;
         }
         g = bs.getDrawGraphics();
-        g.clearRect(0,0,width,height);
+        Graphics2D g2 = (Graphics2D) g;
+        g.clearRect(0,0,display.getFrame().getWidth(),display.getFrame().getHeight());
 
-        if(State.getState() !=null)
-            State.getState().render(g);
+        AffineTransform scaleMatrix = new AffineTransform();
+        scaleMatrix.concatenate(g2.getTransform());
+        scaleMatrix.scale(sx, sy-0.07);
+        g2.setTransform(scaleMatrix);
+
+
+        if(State.getState() !=null) {
+            State.getState().render(g2);
+
+        }
 
         bs.show();
-        g.dispose();
+        g2.dispose();
+
     }
 
     /**
-     * Uruchomienie pętli gry działającej w 60fps aż do zatrzymania metodą stop
+     * Wykonywanie się pętli gry działającej w 60fps aż do zatrzymania metodą stop
      */
 
     @Override
@@ -206,7 +239,7 @@ public class Game implements Runnable {
     }
 
     /**
-     * Zatrzymanie pętli gry
+     * Zatrzymanie wątku
      */
 
     public synchronized void stop(){
@@ -250,5 +283,13 @@ public class Game implements Runnable {
 
     public Display getDisplay() {
         return display;
+    }
+
+    public float getSx() {
+        return sx;
+    }
+
+    public float getSy() {
+        return sy;
     }
 }

@@ -6,7 +6,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 /**
- * Klasa obsługująca wszystkie jednostki
+ * Klasa zarządzająca jednostkami
  */
 
 public class EntityManager {
@@ -81,15 +81,6 @@ public class EntityManager {
     public void addEntity(Entity e){
         entities.add(e);
     }
-
-    public void clearEntities(){
-        for(int i=0;i<entities.size();i++){
-            Entity e=entities.get(i);
-                entities.remove(e);
-                e.update();
-        }
-    }
-
 
     public static Player getPlayer() {
         return player;

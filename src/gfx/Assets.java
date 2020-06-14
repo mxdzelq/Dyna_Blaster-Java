@@ -26,7 +26,7 @@ public class Assets {
     public static BufferedImage brick,wall,grass,speedUp,nextLevelDoors,fireBoost;
 
     /**
-     * Tablica przechowująca obrazy, które wymagają animacji
+     * Animacja ruchu gracza
      */
 
     public static BufferedImage[] player_down, player_up, player_left, player_right;

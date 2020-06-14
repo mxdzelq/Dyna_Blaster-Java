@@ -166,6 +166,7 @@ for(int y=0;y<height;y++){
      * Załadowanie jednostek na mapę
      * 2 - cegła
      * 3 - wróg
+     * 6 - cegła z boosterem ognia
      * 7 - cegła z boosterem prędkości
      * 8 - cegła z przejściem na kolejny poziom
      */

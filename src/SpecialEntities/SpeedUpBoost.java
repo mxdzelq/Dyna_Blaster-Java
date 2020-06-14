@@ -40,7 +40,7 @@ public class SpeedUpBoost extends SpecialEntity {
     }
 
     /**
-     * Sprawdzenie kolizji z graczem i zwiększenie prędkości
+     * Sprawdzenie kolizji z graczem i zwiększenie jego prędkości
      * @param xOffset 0
      * @param yOffset 0
      * @return zwrot czy kolizja występuje

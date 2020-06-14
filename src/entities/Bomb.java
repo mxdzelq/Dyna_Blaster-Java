@@ -53,7 +53,7 @@ public class Bomb extends StaticEntity{
      */
 
     public Bomb(Handler handler, float x, float y) {
-        super(handler, x, y, 32, 32);
+        super(handler, x, y, config.tileWidth, config.tileHeight);
 
         bounds.x=0;
         bounds.y=0;
