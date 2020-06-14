@@ -229,6 +229,10 @@ for(int y=0;y<height;y++){
         return entityManager;
     }
 
+    public SpecialEntityManager getSpecialEntityManager() {
+        return specialEntityManager;
+    }
+
     public int getId() {
         return id;
     }

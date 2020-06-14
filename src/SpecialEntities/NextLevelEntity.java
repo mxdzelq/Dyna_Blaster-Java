@@ -57,6 +57,7 @@ public class NextLevelEntity extends SpecialEntity {
     public final boolean checkCollisionWithPlayer(float xOffset, float yOffset){
         if(getCollisionBounds(0f,0f).intersects(player.getCollisionBounds(xOffset,yOffset))){
             if(handler.getMap().getId()==1) {
+                handler.getMap().getSpecialEntityManager().getSpecialEntities().clear();
                 Player player2 = EntityManager.getPlayer();
                 handler.getMap().getEntityManager().getEntities().clear();
                 handler.getMap().getEntityManager().getEntities().add(player2);
@@ -72,6 +73,7 @@ public class NextLevelEntity extends SpecialEntity {
                 return true;
             }
             if(handler.getMap().getId()==2) {
+                handler.getMap().getSpecialEntityManager().getSpecialEntities().clear();
                 Player player3 = EntityManager.getPlayer();
                 handler.getMap().getEntityManager().getEntities().clear();
                 handler.getMap().getEntityManager().getEntities().add(player3);
@@ -88,6 +90,7 @@ public class NextLevelEntity extends SpecialEntity {
             }
             if(handler.getMap().getId()==3){
                 handler.getMap().getEntityManager().getEntities().clear();
+                handler.getMap().getSpecialEntityManager().getSpecialEntities().clear();
                 handler.getMap().setId(0);
                 EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+config.pointsForPassingLevel);
                 EntityManager.getPlayer().setScore(EntityManager.getPlayer().getScore()+(EntityManager.getPlayer().getHealth()*config.pointsForLife) + (EntityManager.getPlayer().getTimeLeft()/1000));
