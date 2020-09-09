@@ -187,12 +187,7 @@ public class Player extends Creature {
 
     public void checkHealth(){
         if(this.health==0) {
-            f=new JFrame();
-            score=score+(timeLeft/1000);
-            name = JOptionPane.showInputDialog(f,"Umarłeś! \nTwój wynik: "+ score + "\nPodaj nick");
-            Scores.writeScore(name,score);
-            State.setState(handler.getGame().menuState);
-            handler.getMap().setId(0);
+            endGame("Umarłeś!");
         }
     }
 
@@ -289,13 +284,17 @@ public class Player extends Creature {
             lastTime = (int) System.currentTimeMillis();
 
     if(timeLeft/1000 <=0){
-        f=new JFrame();
-        name = JOptionPane.showInputDialog(f,"Koniec czasu \nTwój wynik: "+ score + "\nPodaj nick");
-        Scores.writeScore(name,score);
-        State.setState(handler.getGame().menuState);
-        handler.getMap().setId(0);
+        endGame("Koniec czasu");
     }
 
+}
+
+public void endGame(String endGameMessage){
+    f=new JFrame();
+    name = JOptionPane.showInputDialog(f,endGameMessage+ "\nTwój wynik: "+ score + "\nPodaj nick");
+    Scores.writeScore(name,score);
+    State.setState(handler.getGame().menuState);
+    handler.getMap().setId(0);
 }
 
 
